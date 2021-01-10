@@ -31,6 +31,7 @@ header {
     margin-right: auto;
     width: var(--widht);
     padding-left: 50px;
+    color: var(--background-color);  
   }
 
   #profilePicture {
