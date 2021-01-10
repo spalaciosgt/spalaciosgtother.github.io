@@ -3,6 +3,6 @@ window.onload = function() {
     let year = currentDate.getFullYear();
     document.getElementById('copyrightYear').innerText = year;
     document.getElementById('lastUpdated').innerText = 
-    currentDate.toLocaleDateString() + " " + 
+    "Last Updated " + currentDate.toLocaleDateString() + " " + 
     currentDate.toLocaleTimeString(); 
 }
