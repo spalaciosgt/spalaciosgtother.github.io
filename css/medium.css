@@ -1,0 +1,18 @@
+@media only screen and (min-width: 40.0em) {
+    #profilePicture {        
+        margin-top: -150px;
+        margin-right: 5%;
+        width: 125px;
+        float: right;
+        clear: both;                    
+      }
+
+    header h1 {      
+        text-align: center;
+        font-size: 45px;
+        font-weight: bold;
+        color: white;
+        padding-top: 0.5em;
+        padding-right: 63px;
+    }
+  }
