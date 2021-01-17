@@ -15,7 +15,7 @@ header {
 }
 
 header h1, h2 {
-    margin: 0;
+    margin: 0;    
 }
 
 nav {
@@ -54,7 +54,7 @@ main {
 }
 
 main h1 {
-    color: #eba31e;
+    color: black;
 }
 
 main figure img{
@@ -74,7 +74,7 @@ main figcaption {
 footer {
     text-align: center;
     padding: 1rem 2%;
-    color: white;
+    font-weight: bold;
     background-color: orangered; 
 }
 
