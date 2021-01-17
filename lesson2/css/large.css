@@ -1,0 +1,6 @@
+@media only screen and (min-width: 1028px) {
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto;        
+    }
+}

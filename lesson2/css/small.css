@@ -1,0 +1,69 @@
+:root {
+    --main-background-color: #212F3C;   
+    --main-widht: 100%; 
+}
+
+* {
+    font-family: 'Monda', sans-serif;
+}
+
+header {
+    background: var(--main-background-color);  
+    border-radius: 13px 13px 13px 13px;    
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: var(--main-widht);
+    text-align: center;
+    color: white;
+}
+
+main {
+    display: grid;
+    padding: 25px;    
+}
+
+.principle {
+    background-color: #E5E8E8;
+    margin: 25px;
+    padding: 15px;
+    display: grid;
+    border: solid 2px var(--main-background-color);
+    box-shadow: 2px 5px 6px var(--main-background-color);    
+}
+
+.subtitle {
+    text-align: center;
+}
+
+p {
+    display: block;
+    font-size: 12pt;
+    text-align: left;
+    margin: 5%;
+    width: 90%;
+}
+
+img {
+    margin: 5%;
+    width: 90%;
+    border: skyblue 3px solid;
+}
+
+footer {
+    background: var(--main-background-color);  
+    border-radius: 13px 13px 13px 13px;    
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: var(--main-widht);
+    text-align: center;
+    color: white;
+}
+
+ footer a:visited, footer a:link, footer a:active {
+    color: white; 
+    text-decoration: none;
+}
