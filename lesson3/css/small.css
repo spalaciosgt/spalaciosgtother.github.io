@@ -5,6 +5,7 @@
     --menu-color: #00129C;
     --option-color: #070E44;
     --selection-color: #44454B;
+    --border-color: #A2A3A8;
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -73,8 +74,27 @@ main h1 {
     font-size: 1.5rem;    
 }
 
+main h2 {
+    color: var(--header-color);    
+    font-size: 1.25rem;    
+}
+
+main h3 {
+    color: var(--header-color);    
+    font-size: 1rem;    
+}
+
 main p {
-    margin-top: -10px;
+    margin-top: 10px;
+}
+
+main table {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+main table tr td {
+    padding: 0.5rem;
 }
 
 footer {    
@@ -103,14 +123,69 @@ a {
     text-decoration: none;
 }
 
+lu li {
+    margin-left: 15px;
+}
+
 #logo_company_main {
     width: 150px;
+}
+
+#colors {
+    width: 100%;   
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto;    
+}
+
+#color1 {
+    background-color: var(--option-color);
+    
+}
+
+#color2 {    
+    background-color: var(--main-background-color);
+}
+
+#color3 {
+    background-color: var(--second-background-color);
+}
+
+#color4 {
+    background-color: white;    
+}
+
+#color5 {
+    background-color: var(--selection-color);
+}
+
+.colorScheme {
+    border-radius: 13px 13px 13px 13px;    
+    margin: 10px; 
+    text-align: center;   
+    font-weight: bold;
+    font-size: larger;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--border-color);    
 }
 
 .companyLogo {
     float: left;
     width: 70px;   
     margin-right: 10px;
+}
+
+.spanColor1{
+    display: block;
+    color: white;
+    margin-top: 11px;
+}
+
+.spanColor2{
+    display: block;
+    color: var(--selection-color);
+    margin-top: 11px; 
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

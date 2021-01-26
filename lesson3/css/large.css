@@ -21,7 +21,17 @@
 /*----------- MAIN --------------*/
    main {
       padding: 1rem;
-   }  
+   } 
+   #colors {
+      grid-template-columns: auto auto auto auto auto;    
+   } 
+   .spanColor1{
+      margin-top: 5rem;
+    }
+  
+    .spanColor2{
+      margin-top: 5rem; 
+    }
 /*----------- FOOTER --------------*/  
    footer {    
       font-size: 1rem;    
