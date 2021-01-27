@@ -127,6 +127,10 @@ lu li {
     margin-left: 15px;
 }
 
+ol li {
+    margin-left: -10px;
+}
+
 #logo_company_main {
     width: 150px;
 }
