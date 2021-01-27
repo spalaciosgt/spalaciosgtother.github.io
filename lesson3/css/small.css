@@ -123,12 +123,12 @@ a {
     text-decoration: none;
 }
 
-ul li {
-    margin-left: 15px;
+main ul li {
+    margin-left: -5px;
 }
 
-ol li {
-    margin-left: -10px;
+main ol li {
+    margin-left: -5px;
 }
 
 #logo_company_main {
