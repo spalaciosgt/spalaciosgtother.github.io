@@ -1,9 +1,9 @@
 :root {    
-    --main-background-color: #ebd3a1;
-    --second-background-color: #0B1984;  
-    --header-color: #0B1999;
-    --menu-color: #ac8506;
-    --option-color: #070E44;
+    --main-background-color: #F5D796;
+    --second-background-color: #071261;  
+    --header-color: #061174;
+    --menu-color: #AD8500;
+    --option-color: #5F4B02;
     --selection-color: #44454B;
     --border-color: #A2A3A8;
 }
@@ -49,6 +49,7 @@ nav ul {
     background-color: var(--menu-color);  
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 nav a {
@@ -110,7 +111,7 @@ footer {
     padding-bottom: 15px;
     text-align: center;
     color: var(--second-background-color);
-    font-size: 0.70rem;    
+    font-size: 0.70rem;  
 }
 
 footer a:visited, footer a:link, footer a:active {
@@ -127,16 +128,8 @@ a {
     text-decoration: none;
 }
 
-main ul li {
-    margin-left: -5px;
-}
-
-main ol li {
-    margin-left: -5px;
-}
-
 #logo_company_main {
-    width: 150px;
+    width: 100px;
 }
 
 #colors {
@@ -180,7 +173,7 @@ main ol li {
 
 .companyLogo {
     float: left;
-    width: 70px;   
+    width: 45px;   
     margin-right: 10px;
 }
 

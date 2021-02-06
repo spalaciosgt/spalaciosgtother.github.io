@@ -1,33 +1,36 @@
-@media only screen and (min-width: 128rem) {
+@media only screen and (min-width: 64rem) {
 /*----------- BODY --------------*/
-   header, nav, main, footer {
-       max-width: 64rem;
+   header, nav, main, footer {     
        margin: 0;
-   }
+   }   
+
 /*----------- HEADER --------------*/
    header h1 {
       font-size: 1.75rem;
    }
+
    header h2 {
       font-size: 1.50rem;
    }
+
    header h3 {
       font-size: 1.25rem;
    }
+
    .companyLogo {
-      width: 200px;   
+      width: 75px;   
    }
 /*----------- NAVIGATION --------------*/
-nav ul li {
-   width: 20%;    
- }
+   
 /*----------- MAIN --------------*/
    main {
       padding: 1rem;
    } 
+
    #colors {
       grid-template-columns: auto auto auto auto auto;    
    } 
+
    .spanColor1{
       margin-top: 5rem;
     }
@@ -35,6 +38,7 @@ nav ul li {
     .spanColor2{
       margin-top: 5rem; 
     }
+
 /*----------- FOOTER --------------*/  
    footer {    
       font-size: 1rem;    
