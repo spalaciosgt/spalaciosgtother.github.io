@@ -90,13 +90,42 @@ main {
 }
 
 main section {
-    padding: 20px;
+    padding: 0;
 }
 
-main .sec1 {
-background-color: var(--border-color);
+.section1 {
+    background-color: transparent;
+    margin-bottom: 2rem;
+    color: white;
 }
-  
+
+.divSection1 {
+    background-image: url('../images/guatemala-city.jpg');
+    background-size: 100% auto;
+    padding: 15px;
+}
+
+.divSection2 {
+    width: 80%;   
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.day {
+    display: block;
+    text-align: center;
+    background-color: var(--second-background-color);
+    color: white;
+    padding: 10px;
+}
+
+.divSection1Info {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin-bottom: 50px;
+    width: 250px;
+}
 
 main span {
     color: var(--header-color);    
@@ -109,16 +138,15 @@ main h1 {
     color: var(--header-color);    
     font-size: 1.5rem;    
     display: block;
-    text-align: center;
 }
 
 main h2 {
-    color: var(--header-color);    
-    font-size: 1.25rem;    
+    color: var(--header-color);
+    font-size: 1.25rem;  
+    display: block;
 }
 
 main h3 {
-    color: var(--header-color);    
     font-size: 1rem;    
 }
 

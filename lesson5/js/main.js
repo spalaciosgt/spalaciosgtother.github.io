@@ -8,12 +8,12 @@ window.onload = function() {
     "Last Updated " + currentDate.toLocaleDateString() + " " + 
     currentDate.toLocaleTimeString();     
 
-    // Message  if  today is Friday
-    let currentDay = currentDate.getDate();
-    if (currentDay == 6) {
-        document.getElementById("messageJS").classList.toggle("show");
-    } else {
+    // Message if today is Friday
+    let currentDay = currentDate.getDay();
+    if (currentDay != 5) {
         document.getElementById("messageJS").classList.toggle("hide");
+    } else {
+        document.getElementById("messageJS").classList.toggle("show");
     }
 }
 

@@ -25,6 +25,16 @@
 /*----------- NAVIGATION --------------*/   
 
 /*----------- MAIN --------------*/   
+   main {
+      margin: 0 auto;
+      max-width: 70%;
+   }
+
+   .divSection1Info {
+      margin-bottom: 150px;
+      width: 300px;
+   }
+
    #colors {
       grid-template-columns: auto auto auto auto auto;    
    } 
