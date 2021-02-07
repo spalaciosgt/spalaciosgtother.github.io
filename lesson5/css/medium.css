@@ -20,7 +20,22 @@
   }
 
 /*----------- NAVIGATION --------------*/  
-  
+  nav ul {
+    flex-direction: row;       
+  }  
+
+  nav ul li {
+    width: 16.67%;    
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul.hideObject {
+    display: flex;
+  } 
+
 /*----------- MAIN --------------*/
   #colors {
     grid-template-columns: auto auto auto auto;    
