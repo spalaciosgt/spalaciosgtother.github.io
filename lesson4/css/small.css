@@ -1,11 +1,12 @@
 :root {    
     --main-background-color: #F5D796;
     --second-background-color: #071261;  
+    --third-background-color: #C5CBEC;  
     --header-color: #061174;
     --menu-color: #916F01;
     --option-color: #5F4B02;
     --selection-color: #44454B;
-    --border-color: #A2A3A8;
+    --border-color: #A2A3A8;    
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -26,7 +27,7 @@ header h1 {
     margin: 0;    
     font-size: 1.25rem;
     font-weight: bold;
-    color: var(--header-color);
+    color: var(--header-color);    
 }
 
 header h3 {
@@ -34,11 +35,29 @@ header h3 {
     margin: 0;    
     font-size: 1rem;
     font-weight: 600;
-    color: var(--header-color);
+    color: var(--header-color);    
 }
 
 body {
     margin: 0;
+}
+
+nav a {
+    color: white;
+    font-weight: 600;
+}
+
+nav button {
+    background-color: var(--menu-color);  
+    color: white;
+    width: 100%;
+    font-size: 1.25rem;
+    border-style: none;
+    padding: 0.2rem;    
+}
+
+nav ul.hideObject {
+    display: none;
 }
 
 nav ul {
@@ -50,11 +69,6 @@ nav ul {
     padding: 0;
     margin: 0;
     width: 100%;
-}
-
-nav a {
-    color: white;
-    font-weight: 600;
 }
 
 nav ul li a{
@@ -71,12 +85,24 @@ nav a:hover {
 }
 
 main {
-    margin: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+main section {
+    padding: 0.5em;
+    margin: 1em 2rem;
+    background-color: var(--third-background-color);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--border-color);
 }
 
 main h1 {
     color: var(--header-color);    
     font-size: 1.5rem;    
+    display: block;
+    text-align: center;
 }
 
 main h2 {

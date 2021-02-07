@@ -1,4 +1,5 @@
 @media only screen and (min-width: 64rem) {
+
 /*----------- BODY --------------*/
    header, nav, main, footer {     
        margin: 0;
@@ -20,13 +21,25 @@
    .companyLogo {
       width: 75px;   
    }
-/*----------- NAVIGATION --------------*/
-   
-/*----------- MAIN --------------*/
-   main {
-      padding: 1rem;
-   } 
 
+/*----------- NAVIGATION --------------*/
+   nav ul {
+      flex-direction: row;       
+   }  
+
+   nav ul li {
+      width: 16.67%;    
+   }
+
+   nav button {
+      display: none;
+   }
+
+   nav ul.hideObject {
+      display: flex;
+   }  
+
+/*----------- MAIN --------------*/   
    #colors {
       grid-template-columns: auto auto auto auto auto;    
    } 

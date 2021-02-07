@@ -13,8 +13,8 @@
     <title>Preston Weather Site</title>
     <meta name="author" content="Samuel Palacios">
     <meta name="viewport" content="width=device-width, initial-scale=1">                
-    <meta name="description" content="Forecast for the highest places (mountains, volcanoes, peaks, etc.)">
-    <meta name="keywords" content="wheater, forecast, high, place, montain, volcanoe, peak">
+    <meta name="description" content="Preston Weather Page">
+    <meta name="keywords" content="wheater, preston, high, place, montain, volcanoe, peak">
     <script src="js/main.js"></script>
   </head>
 
@@ -28,8 +28,9 @@
         </div>
     </header>
 
-    <nav>      
-      <ul>
+    <nav class="clearfix">    
+      <button onclick="toggleMenu()">&#9776; Menu</button>  
+      <ul id="mainMenu" class="hideObject">
         <li><a href="#">Home</a></li>
         <li><a href="preston.html" class="active">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
@@ -40,21 +41,21 @@
 
     </nav>
     
-   <!-- CONTENT HERE -->
    <main>
-    <section class="summary">
+     <h1>Preston Idaho</h1>
+    <section>
         <h2>Weather Summary</h2>
     </section>
-    <section class="five-day">
+    <section>
         <h2>Five Day Forecast</h2>
     </section>
-    <section class="article">
+    <section>
         <h2>Article</h2>
     </section>
-    <section class="contact-info">
+    <section>
         <h2>Contact info</h2>
     </section>
-</main>
+  </main>
 
     <footer>
       &copy; <span id="copyrightYear"></span> |

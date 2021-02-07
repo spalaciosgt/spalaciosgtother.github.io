@@ -6,3 +6,7 @@ window.onload = function() {
     "Last Updated " + currentDate.toLocaleDateString() + " " + 
     currentDate.toLocaleTimeString(); 
 }
+
+function toggleMenu() {
+    document.getElementById("mainMenu").classList.toggle("hideObject");  
+}  
