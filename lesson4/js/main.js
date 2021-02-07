@@ -8,5 +8,11 @@ window.onload = function() {
 }
 
 function toggleMenu() {
-    document.getElementById("mainMenu").classList.toggle("hideObject");  
-}  
+    document.getElementById("mainMenu").classList.toggle("hideObject"); 
+    let menuText = document.getElementById("button_menu").innerText;    
+    if (menuText.endsWith("X")) {
+        document.getElementById("button_menu").innerText = "☰ Menu";
+    } else {
+        document.getElementById("button_menu").innerText = "X";
+    }
+}
