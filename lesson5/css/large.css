@@ -26,8 +26,8 @@
 
 /*----------- MAIN --------------*/   
    main {
-      margin: 0 auto;
-      max-width: 70%;
+      max-width: 900px; 
+      margin: auto;
    }
 
    .divSection1Info {
@@ -50,5 +50,7 @@
 /*----------- FOOTER --------------*/  
    footer {    
       font-size: 1rem;    
+      max-width: 900px; 
+      margin: auto;
    }
 }

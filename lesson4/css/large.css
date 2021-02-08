@@ -40,6 +40,11 @@
    }  
 
 /*----------- MAIN --------------*/   
+   main {
+      max-width: 900px; 
+      margin: auto;
+   }
+   
    #colors {
       grid-template-columns: auto auto auto auto auto;    
    } 
@@ -54,6 +59,8 @@
 
 /*----------- FOOTER --------------*/  
    footer {    
-      font-size: 1rem;    
+      font-size: 1rem;   
+      max-width: 900px; 
+      margin: auto;
    }
 }
