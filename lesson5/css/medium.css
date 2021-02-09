@@ -42,9 +42,8 @@
     max-width: 85%;
   }
 
-  .divSection1Info {
-    margin-bottom: 100px;
-    width: 275px;
+  div .divSection1Info {
+    margin-bottom: 150px;    
   }
 
   #colors {

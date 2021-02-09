@@ -120,11 +120,13 @@ main section {
     padding: 10px;
 }
 
-.divSection1Info {
+div .divSection1Info {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
     margin-bottom: 50px;
-    width: 250px;
+    width: 180px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 main span {

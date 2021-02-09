@@ -30,9 +30,8 @@
       margin: auto;
    }
 
-   .divSection1Info {
-      margin-bottom: 150px;
-      width: 300px;
+   div .divSection1Info {
+      margin-bottom: 200px;      
    }
 
    #colors {
