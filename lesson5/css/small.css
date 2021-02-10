@@ -103,6 +103,12 @@ main section {
     display: none;
 }
 
+.divSection4 {
+    width: 100%;   
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
 .divSection1 {
     background-image: url('../images/guatemala-city.jpg');
     background-size: 100% auto;
@@ -113,6 +119,21 @@ main section {
     width: 80%;   
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+}
+
+.divSection4 {
+    margin-bottom: 1rem;
+}
+
+.divSection4 span {
+    display: block;
+    text-align: left;
+    color: black;
+}
+
+.map {
+    width: 100%;
+    height: 200px;
 }
 
 .day {
