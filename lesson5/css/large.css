@@ -30,9 +30,27 @@
       margin: auto;
    }
 
+   .section1 h1 {
+      margin-left: 0;
+   }  
+
+   .section2 {
+      margin-left: 0;
+   }
+
    div .divSection1Info {
       margin-bottom: 200px;      
    }
+
+   .section3 {
+      margin-left: 0;
+      margin-right: 0;      
+   }
+
+   .section4 {
+      margin-left: 0;
+      margin-right: 0; 
+    }
 
    #colors {
       grid-template-columns: auto auto auto auto auto;    
