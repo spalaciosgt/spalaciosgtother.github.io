@@ -99,6 +99,10 @@ main section {
     color: white;
 }
 
+.section2 {
+    display: none;
+}
+
 .divSection1 {
     background-image: url('../images/guatemala-city.jpg');
     background-size: 100% auto;
@@ -123,10 +127,17 @@ main section {
 div .divSection1Info {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     width: 180px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.weatherState {
+    display: block;
+    width: 50px;
+    margin: auto auto;
+    padding: 5px;
 }
 
 main span {
@@ -258,6 +269,10 @@ a {
 
 .hide {
     display: none;
+}
+
+.pDay {
+    text-align: center;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
