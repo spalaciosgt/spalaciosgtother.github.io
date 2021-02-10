@@ -50,6 +50,17 @@
     display: block;
   }
 
+  .articlePicture1 {
+    display: block;
+    width: 400px;
+    margin: 0 0 10px 10px;
+    float: right;
+  }
+
+  .articlePicture2 {
+    display: none;
+  }
+
   #colors {
     grid-template-columns: auto auto auto auto;    
   }  

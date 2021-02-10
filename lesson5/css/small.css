@@ -111,7 +111,6 @@ main section {
 
 .divSection2 {
     width: 80%;   
-    height: 200px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
 }
@@ -139,6 +138,17 @@ div .divSection1Info {
     margin: auto auto;
     padding: 5px;
 }
+
+.articlePicture1 {
+    display: none;
+}
+
+.articlePicture2 {
+    display: block;
+    width: 100%;
+    margin: 0 0 5px 5px;
+}
+
 
 main span {
     color: var(--header-color);    
