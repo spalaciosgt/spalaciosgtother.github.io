@@ -1,0 +1,343 @@
+:root {    
+    --main-background-color: #F5D796;
+    --second-background-color: #071261;  
+    --third-background-color: #C5CBEC;  
+    --header-color: #061174;
+    --menu-color: #916F01;
+    --option-color: #5F4B02;
+    --selection-color: #44454B;
+    --border-color: #A2A3A8;    
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: var(--main-background-color);
+    padding: 2rem 2%;
+}
+
+header h1 {
+    letter-spacing: 3px;
+    margin: 0;    
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--header-color);    
+}
+
+header h3 {
+    letter-spacing: 1px;
+    margin: 0;    
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--header-color);    
+}
+
+body {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    font-weight: 600;
+}
+
+nav button {
+    background-color: var(--menu-color);  
+    color: white;
+    width: 100%;
+    font-size: 1.25rem;
+    border-style: none;
+    padding: 0.2rem;    
+}
+
+nav ul.hideObject {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--menu-color);  
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li a{
+    padding: 0.5rem 0;
+    display: block;
+}
+
+nav ul li a.active{
+    background-color: var(--option-color);    
+}
+
+nav a:hover {
+    background-color: var(--selection-color);  
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+main section {
+    padding: 0;
+}
+
+.section1 {
+    background-color: transparent;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.section2 {
+    display: none;
+}
+
+.section4 {
+    margin-left: 5px;
+    margin-right: 5px; 
+    margin-bottom: 1rem;
+}
+
+.divSection4 {
+    width: 100%;   
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 1rem;
+    grid-column-gap: 15px;
+}
+
+.divMap {
+    margin-top: 1rem;
+    grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.divSection1 {
+    background-image: url('../images/hero_small.jpg');
+    background-size: 100% auto;
+    padding: 15px;
+}
+
+.divSection2 {
+    width: 80%;   
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.divSection4 span {
+    display: block;
+    text-align: left;
+    color: black;
+}
+
+.map {
+    width: 100%;
+    height: 125px;
+}
+
+.day {
+    display: block;
+    text-align: center;
+    background-color: var(--second-background-color);
+    color: white;
+    padding: 10px;
+}
+
+div .divSection1Info {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin-bottom: 5px;
+    width: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 200px;
+}
+
+.spanWeather {
+    color: white;
+    margin: 0;
+    display: inline;
+}
+
+.weatherState {
+    display: block;
+    width: 50px;
+    margin: auto auto;
+    padding: 5px;
+}
+
+.articlePicture1 {
+    display: none;
+}
+
+.articlePicture2 {
+    display: block;
+    width: 100%;    
+}
+
+main span {
+    color: var(--header-color);    
+    font-size: 1rem;    
+    display: block;
+    text-align: center;
+}
+
+main h1 {
+    color: var(--header-color);    
+    font-size: 1.5rem;    
+    display: block;
+}
+
+main h2 {
+    color: var(--header-color);
+    font-size: 1.25rem;  
+    display: block;
+}
+
+main h3 {
+    font-size: 1rem;    
+}
+
+main p {
+    margin-top: 10px;
+}
+
+main table {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+main table tr td {
+    padding: 0.5rem;
+}
+
+footer {    
+    background: var(--main-background-color);  
+    border-radius: 13px 13px 13px 13px;    
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: var(--second-background-color);
+    font-size: 0.70rem;  
+}
+
+footer a:visited, footer a:link, footer a:active {
+    color: var(--second-background-color);  
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo_company_main {
+    width: 100px;
+}
+
+#colors {
+    width: 100%;   
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto;    
+}
+
+#color1 {
+    background-color: var(--option-color);
+    
+}
+
+#color2 {    
+    background-color: var(--main-background-color);
+}
+
+#color3 {
+    background-color: var(--second-background-color);
+}
+
+#color4 {
+    background-color: white;    
+}
+
+#color5 {
+    background-color: var(--selection-color);
+}
+
+.colorScheme {
+    border-radius: 13px 13px 13px 13px;    
+    margin: 10px; 
+    text-align: center;   
+    font-weight: bold;
+    font-size: larger;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--border-color);    
+}
+
+.section1 h1 {
+    margin-left: 5px;
+} 
+
+.companyLogo {
+    float: left;
+    width: 45px;   
+    margin-right: 10px;
+}
+
+.spanColor1{
+    display: block;
+    color: white;
+    margin-top: 11px;
+}
+
+.spanColor2{
+    display: block;
+    color: var(--selection-color);
+    margin-top: 11px; 
+}
+
+.show{
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.pDay {
+    text-align: center;
+}
+
+.section3 {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 2rem;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
