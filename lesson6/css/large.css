@@ -68,6 +68,22 @@
       margin-top: 5rem; 
     }
 
+   .divGallery {
+      grid-template-columns: auto auto auto;
+   }
+
+   .divGallery figure {
+      border-radius: 5px;
+   }
+
+   .divGallery figure:hover {
+      box-shadow: 0 0 50px #858584;
+   }
+   
+   .pictureGallery {
+      border-radius: 5px;      
+   }
+
 /*----------- FOOTER --------------*/  
    footer {    
       font-size: 1rem;    

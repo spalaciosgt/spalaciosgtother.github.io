@@ -113,6 +113,11 @@
       width: 100%;
       height: 150px;
   }
+
+  .divGallery {
+    grid-template-columns: auto auto;
+  }
+
 /*----------- FOOTER --------------*/    
   footer {    
     font-size: 0.85rem;    
