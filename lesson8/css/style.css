@@ -36,4 +36,5 @@ tfoot{
 .blueTr {
     color: white;
     background-color: #5a839c;    
+    font-weight: bold;
 }
