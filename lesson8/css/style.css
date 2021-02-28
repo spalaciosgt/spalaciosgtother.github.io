@@ -25,7 +25,7 @@ td, th, caption {
 }
 
 tbody tr:nth-child(odd) td{
-    background-color:  #dfe6e3;
+    background-color:  #d4dff0;
 }
 
 tfoot{
@@ -35,5 +35,5 @@ tfoot{
 
 .blueTr {
     color: white;
-    background-color: #628ca6;    
+    background-color: #5a839c;    
 }
