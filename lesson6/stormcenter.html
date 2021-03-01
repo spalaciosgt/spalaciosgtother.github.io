@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">               
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css" >        
+    <link rel="stylesheet" href="css/medium.css" >        
+    <link rel="stylesheet" href="css/large.css" >                       
+    <link rel="shortcut icon" type="image/x-icon" href="images/company_logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <title>Preston Weather Site</title>
+    <meta name="author" content="Samuel Palacios">
+    <meta name="viewport" content="width=device-width, initial-scale=1">                
+    <meta name="description" content="Preston Weather Page">
+    <meta name="keywords" content="wheater, preston, high, place, montain, volcanoe, peak">        
+  </head>
+
+  <body>
+
+    <header>
+        <div>
+          <img class="companyLogo" src="images/company_logo.png" alt="Mountain Weather Logo"/>
+          <h1>Preston Weather Site</h1>
+          <h3>Get to know about weather!</h3>
+        </div>
+    </header>
+
+    <nav class="clearfix">    
+      <button id="button_menu" onclick="toggleMenu()">☰ Menu</button>  
+      <ul id="mainMenu" class="hideObject">
+        <li><a href="#">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+
+    </nav>
+    
+   <main>
+        <span id="messageJS">Saturday = Preston Pancakes in the Park!  9:00 a.m. 
+                             Saturday at the city park pavilion.</span>
+        <h1 class="h1Gallery">Storm Center</h1>        
+  
+    <form method="get" action="thanks.html">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label class="top">Full Name*<input type="text" name="fullName" pattern="[A-Za-z ]{5,}" required></label>
+            <label class="top">Phone Number*<input type="tel" name="phoneNumber" placeholder="(001) (1234567)" required></label>
+            <label class="top">Zip Code* <input type="number" name="zipCode" required></label>
+            <label class="top">Email<input type="email" name="email" placeholder="username@servername.dom"></label>
+        </fieldset>    
+
+        <fieldset>
+          <legend>Storm Information</legend>
+          <label class="top">Storm Date<input type="date" name="stormDate"></label>
+          <label class="top">Storm Type
+            <input name="stormtype" list="stormTypeList">
+            <datalist id="stormTypeList">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricance">
+                <option value="Thunderstorm">
+                <option value="Tornado">
+            </datalist>
+          </label>
+
+          <label class="stormSeverity">Storm Severity:
+              <input id="stormSeverityRange"
+                     type="range"
+                     value="5" min="1" max="10" step="1" 
+                     list="tickmarksList"
+                     oninput="adjustRating(this.value)" 
+                     onchange="adjustRating(this.value)"
+                     class="stormRange">
+              <span id="ratingValue" class="stormRange">5</span>       
+          </label>
+  
+          <datalist id="tickmarksList">
+              <option value="1">
+              <option value="2">
+              <option value="3">
+              <option value="4">
+              <option value="5">
+              <option value="6">
+              <option value="7">
+              <option value="8">
+              <option value="9">
+              <option value="10">
+          </datalist>
+  
+          <label class="top">Storm Region
+              <select name="stormRegin">
+                  <option value="None">Select One...</option>
+                  <option value="Preston">Preston</option>
+                  <option value="Soda">Soda Springs</option>
+                  <option value="Fish">Fish Haven</option>
+              </select>
+          </label>
+  
+          <div>Are you in danger?</div>
+          <label class="indangerField"><input type="radio" name="inDanger" value="Yes">Yes</label>
+          <label class="indangerField"><input type="radio" name="inDanger" value="Maybe">Maybe</label>
+          <label class="indangerField"><input type="radio" name="inDanger" value="No">No</label>
+      </fieldset>        
+      
+      <fieldset>
+        <legend>Additional Information</legend>
+        <textarea id="comments"
+                  name="additionalComments" 
+                  placeholder="Enter your comments here..." 
+                  cols="50"
+                  rows="20">
+        </textarea>
+      </fieldset>
+      
+      <input class="submitButton" type="submit" value="Report Storm">
+
+    </form>
+</main>
+
+    <footer>
+      &copy; <span id="copyrightYear"></span> |
+      Samuel Palacios | Guatemala | Preston Weather |
+      <a href="preston.html">Preston Weather Site</a><br>
+      <span id="lastUpdated"></span>                
+   </footer>   
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>    
+   <script src="js/main.js"></script>
+   <script src="js/rating.js"></script>
+  </body>
+</html>

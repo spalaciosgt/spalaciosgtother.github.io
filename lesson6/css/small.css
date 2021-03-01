@@ -360,6 +360,91 @@ a {
     filter: blur(0.15em);
 }
 
+.top input:required {
+    border-left: 5px solid red;
+}
+
+.top input:required:valid {
+    border-left: 5px solid green;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+form legend {
+    color: black;
+    font-weight: bold;    
+}
+
+form fieldset {
+    border: 1px solid gray;
+    border-radius: 5px;   
+    padding: 1rem 1rem;     
+    margin-bottom: 1rem;
+}
+
+form label.top, form div {
+    color: black;
+    padding-top: 1rem;    
+    display: block;    
+}
+
+form label.top input, form label.top select {
+    font-size: 0.9rem;
+    color:  rgba(0, 0, 0, 0.70);
+    border: solid 1px gray;
+    border-radius: 5px;
+    padding: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.10);
+    line-height: 1.15;
+    width: 100%;
+    display: block;      
+}
+
+.submitButton {
+    width: 100%;
+    border: none;
+    background-color: var(--header-color);
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;    
+}
+
+#stormSeverityRange {
+    width: 50%;
+}
+
+.stormSeverity {
+    padding-top: 1rem;
+    display: block;
+}
+
+.stormRange {
+    display: inline;
+    margin-left: 0.25rem;
+    vertical-align: top;
+}
+
+.indangerField {
+    display: block;
+    margin-top: 0.75rem;
+    padding-right: 15px;
+    color: rgba(0, 0, 0, 0.70);    
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+#comments {
+    color:  rgba(0, 0, 0, 0.70);
+    width: 100%;
+    height: 12rem;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
