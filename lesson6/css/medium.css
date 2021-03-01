@@ -118,6 +118,18 @@
     grid-template-columns: auto auto;
   }
 
+  form {
+    width: 60%;
+  }
+
+  #stormSeverityRange {
+    width: 50%;
+  }
+
+  .stormRange {
+    margin-left: 0.50rem;
+  }
+
 /*----------- FOOTER --------------*/    
   footer {    
     font-size: 0.85rem;    
