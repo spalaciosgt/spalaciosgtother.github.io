@@ -55,6 +55,11 @@ img {
     margin-top: 1rem;    
 }
 
+footer {
+    color: white;
+    font-weight: bold;
+}
+
 /* Medium Screens */
 @media screen and (min-width: 35rem) {
    section img {
