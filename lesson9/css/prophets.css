@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: blueviolet;
+  background-color: steelblue;
   text-align: center;  
 }
 
@@ -46,6 +46,7 @@ section:hover {
 p {
     margin: 0.25rem auto;
     font-weight: 600;
+    color: white;
 }
 
 img {
