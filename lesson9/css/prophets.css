@@ -12,12 +12,11 @@ body {
 
 main {
   margin: 1rem 0;
-  box-shadow: 0 0 1.5rem 1.5rem rgba(0, 0, 0, 0.35);
   padding: 1rem;
 }
 
 section {
-  border: 0.25rem solid black;
+  border: 0.15rem solid black;
   padding: 0.75rem;
   margin: 0.25rem;
   color: black;  
@@ -35,12 +34,8 @@ h2 {
   font-size: 2rem;
 }
 
-section img {
-  box-shadow: 3px 3px 3px black;  
-}
-
 section:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 p {
