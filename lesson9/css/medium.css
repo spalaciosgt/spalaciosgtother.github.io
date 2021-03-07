@@ -1,0 +1,137 @@
+@media only screen and (min-width: 45rem) {
+  
+/*----------- BODY --------------*/
+
+/*----------- HEADER --------------*/
+  header h1 {
+    font-size: 1.65rem;
+  }
+
+  header h2 {
+    font-size: 1.40rem;
+  }
+
+  header h3 {
+    font-size: 1.15rem;
+  }
+
+  .companyLogo {
+    width: 60px;   
+  }
+
+/*----------- NAVIGATION --------------*/  
+  nav ul {
+    flex-direction: row;       
+  }  
+
+  nav ul li {
+    width: 16.67%;    
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul.hideObject {
+    display: flex;
+  } 
+
+/*----------- MAIN --------------*/
+  main {
+    margin: 0 auto;
+    max-width: 85%;
+  }
+  
+  .section1 h1 {
+    margin-left: 10px;
+  }   
+
+  div .divSection1Info {
+    margin-bottom: 40px;    
+  }
+
+  .divSection1 {
+    background-image: url('../images/hero_medium.jpg');
+  }
+
+  .section2 {
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 2rem;
+  }
+
+  .articlePicture1 {
+    display: block;
+    width: 400px;
+    margin: 0 0 10px 10px;
+    float: right;
+  }
+
+  .articlePicture2 {
+    display: none;
+  }
+
+  #colors {
+    grid-template-columns: auto auto auto auto;    
+  }  
+  
+  .spanColor1{
+    margin-top: 1.75rem;
+  }
+
+  .spanColor2{
+    margin-top: 1.75rem; 
+  }
+
+  .divSection4 {
+    grid-template-columns: auto auto auto;
+  }
+
+  .divSection4 span {
+    display: block;
+    text-align: left;
+    color: black;
+  }
+
+  .section3 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .section4 {
+    margin-left: 10px;
+    margin-right: 10px; 
+  }
+  
+  .divMap {
+    margin-top: 0;    
+    grid-column-start: 3;
+    grid-column-end: 3;  
+  }
+
+  .map {
+      width: 100%;
+      height: 150px;
+  }
+
+  .divGallery {
+    grid-template-columns: auto auto;
+  }
+
+  form {
+    width: 60%;
+  }
+
+  #stormSeverityRange {
+    width: 50%;
+  }
+
+  .stormRange {
+    margin-left: 0.50rem;
+  }
+
+/*----------- FOOTER --------------*/    
+  footer {    
+    font-size: 0.85rem;    
+  }
+}
