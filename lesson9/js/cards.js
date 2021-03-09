@@ -28,9 +28,10 @@ fetch(requestURL)
                  Adding tags
                 */
 
-                // Section
-                let card = document.createElement('div');
-
+                // Divs
+                let cards = document.createElement('div');
+                let card1 = document.createElement('div');
+                
                 // Picture                        
                 let picture = document.createElement('img');
 
@@ -44,16 +45,20 @@ fetch(requestURL)
                 /*
                  Setting attributes
                 */
-
+                
+                // Divs
+                card1.setAttribute('class', "cardDiv1");
+                cards.setAttribute('class', "cardsDiv"); 
+                
                 // Picture
                 picture.setAttribute('src', "images/" + towns[i].photo);
                 picture.setAttribute('loading', 'lazy');
                 picture.setAttribute('alt', towns[i].name);
 
                 if (j % 2 == 0) {
-                    picture.setAttribute('class', "cardImageR");  
+                    picture.setAttribute('class', "cardL");  
                 } else {
-                    picture.setAttribute('class', "cardImageL");         
+                    picture.setAttribute('class', "cardR");         
                 }                
                 
                 // Information
@@ -72,13 +77,14 @@ fetch(requestURL)
                 /*
                  Final appendings
                 */ 
-                card.appendChild(picture);
-                card.appendChild(h2);
-                card.appendChild(h3);            
-                card.appendChild(p1);            
-                card.appendChild(p2);            
-                card.appendChild(p3);            
-                document.querySelector('#cards').appendChild(card);
+                card1.appendChild(h2);
+                card1.appendChild(h3);            
+                card1.appendChild(p1);            
+                card1.appendChild(p2);            
+                card1.appendChild(p3);            
+                cards.appendChild(picture); 
+                cards.appendChild(card1); 
+                document.querySelector('#cards').appendChild(cards);                
             }
         }
     });

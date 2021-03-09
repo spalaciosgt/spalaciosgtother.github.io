@@ -475,20 +475,18 @@ main section:hover {
 
 #cards {
     margin-top: 1rem;
-    width: 100%;   
+    width: 90%;   
+    margin-left: 5%;
     display: grid;
     grid-template-columns: auto;
     grid-column-gap: 15px;
 }
 
-.cardImageR {
-    width: 50%;
-    float: right;
-}
-
-.cardImageL {
-    width: 50%;
-    float: left;
+.cardsDiv {
+    border-style: solid;
+    border-color: gray;
+    border-width: 2px;
+    margin-top: 1rem;
 }
 
 .cardHeader {
@@ -499,8 +497,16 @@ main section:hover {
 .cardParagraph {
     display: block;
     color: var(--second-background-color);
-    margin-left: 1rem;
-    margin-right: 1rem;
+}
+
+.cardL {
+    float: none;
+    width: 100%; 
+  }
+
+.cardR {
+    float: none;
+    width: 100%;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

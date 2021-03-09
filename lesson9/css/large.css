@@ -94,19 +94,21 @@
   
     .stormRange {
       margin-left: 0.75rem;
-    }
+   }
 
    #cards {
       grid-template-columns: auto auto auto;
    }
-
-   .cardImageR {
-      width: 100%;      
-  }
+   
+   .cardR {
+      float: none;
+      width: 100%; 
+   }
   
-  .cardImageL {
-      width: 100%;
-  }
+   .cardL {
+      float: none;
+      width: 100%; 
+   }
   
 /*----------- FOOTER --------------*/  
    footer {    
