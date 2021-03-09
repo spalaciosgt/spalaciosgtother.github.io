@@ -16,6 +16,7 @@ fetch(requestURL)
 
         // Loop for rendering each prophet card
         for (let i = 0; i < towns.length; i++) {
+
             let cityName = towns[i].name;
 
             if (cityName.localeCompare("Fish Haven") == 0 ||

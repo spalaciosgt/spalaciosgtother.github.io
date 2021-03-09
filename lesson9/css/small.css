@@ -475,8 +475,8 @@ main section:hover {
 
 #cards {
     margin-top: 1rem;
-    width: 90%;   
-    margin-left: 5%;
+    width: 70%;   
+    margin-left: 15%;
     display: grid;
     grid-template-columns: auto;
     grid-column-gap: 15px;
@@ -497,6 +497,7 @@ main section:hover {
 .cardParagraph {
     display: block;
     color: var(--second-background-color);
+    text-align: center;
 }
 
 .cardL {
