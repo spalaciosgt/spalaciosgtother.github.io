@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">               
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css" >        
+    <link rel="stylesheet" href="css/medium.css" >        
+    <link rel="stylesheet" href="css/large.css" >                       
+    <link rel="shortcut icon" type="image/x-icon" href="images/company_logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <title>Preston Weather Site</title>
+    <meta name="author" content="Samuel Palacios">
+    <meta name="viewport" content="width=device-width, initial-scale=1">                
+    <meta name="description" content="Preston Weather Page">
+    <meta name="keywords" content="wheater, preston, high, place, montain, volcanoe, peak">        
+  </head>
+
+  <body>
+
+    <header>
+        <div>
+          <img class="companyLogo" src="images/company_logo.png" alt="Mountain Weather Logo"/>
+          <h1>Preston Weather Site</h1>
+          <h3>Get to know about weather!</h3>
+        </div>
+    </header>
+
+    <nav class="clearfix">    
+      <button id="button_menu" onclick="toggleMenu()">☰ Menu</button>  
+      <ul id="mainMenu" class="hideObject">
+        <li><a href="#">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html" class="active">Gallery</a></li>
+      </ul>
+
+    </nav>
+    
+   <main>
+        <span id="messageJS">Saturday = Preston Pancakes in the Park!  9:00 a.m. 
+                             Saturday at the city park pavilion.</span>
+        <h1 class="h1Gallery">Weather Gallery</h1>
+        <div class="divGallery">
+                <figure>
+                    <img src="images/placeholder.png" 
+                         data-src="images/high-mountain.jpg"
+                         alt="High Mountain"
+                         class="pictureGallery" />
+                    <figcaption>
+                        <p>High Mountain</p>
+                    </figcaption>
+                </figure>  
+                <figure>
+                    <img src="images/placeholder.png" 
+                         data-src="images/rocky-mountain.jpg"
+                         alt="Rocky Mountain"
+                         class="pictureGallery" />
+                    <figcaption>
+                        <p>Rocky Mountain</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.png" 
+                         data-src="images/forest-waterfall.jpg"
+                         alt="Forest Waterfall"
+                         class="pictureGallery"/>
+                    <figcaption>
+                        <p>Forest Waterfall</p>
+                    </figcaption>
+                </figure>    
+                <figure>
+                    <img src="images/placeholder.png" 
+                         data-src="images/cloudy-forest.jpg"
+                         alt="Cloudy Forest"
+                         class="pictureGallery"/>
+                    <figcaption>
+                        <p>Cloudy Forest</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.png" 
+                         data-src="images/sea-pier.jpg"
+                         alt="Sea Pier"
+                         class="pictureGallery"/>
+                    <figcaption>
+                        <p>Sea Pier</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.png" 
+                         data-src="images/raindrops.jpg"
+                         alt="Raindrops"
+                         class="pictureGallery"/>
+                    <figcaption>
+                        <p>Raindrops</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/placeholder.png" 
+                         data-src="images/gulf.jpg"
+                         alt="Gulf"
+                         class="pictureGallery"/>
+                    <figcaption>
+                        <p>Gulf</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.png" 
+                         data-src="images/lush-forest.jpg"
+                         alt="Lush Forest"
+                         class="pictureGallery"/>
+                    <figcaption>
+                        <p>Luch Forest</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.png" 
+                         data-src="images/lake.jpg"
+                         alt="Lake"
+                         class="pictureGallery"/>
+                    <figcaption>
+                        <p>Lake</p>
+                    </figcaption>
+                </figure>
+        </div>
+  </main>
+
+    <footer>
+      &copy; <span id="copyrightYear"></span> |
+      Samuel Palacios | Guatemala | Preston Weather |
+      <a href="preston.html">Preston Weather Site</a><br>
+      <span id="lastUpdated"></span>                
+   </footer>   
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>    
+   <script src="js/main.js"></script>
+  </body>
+</html>

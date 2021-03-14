@@ -1,0 +1,105 @@
+@media only screen and (min-width: 64rem) {
+
+/*----------- BODY --------------*/
+   header, nav, main, footer {     
+       margin: 0;
+   }   
+
+/*----------- HEADER --------------*/
+   header h1 {
+      font-size: 1.75rem;
+   }
+
+   header h2 {
+      font-size: 1.50rem;
+   }
+
+   header h3 {
+      font-size: 1.25rem;
+   }
+
+   .companyLogo {
+      width: 75px;   
+   }
+
+/*----------- NAVIGATION --------------*/   
+
+/*----------- MAIN --------------*/   
+   main {
+      max-width: 900px; 
+      margin: auto;
+   }
+
+   .section1 h1 {
+      margin-left: 0;
+   }  
+
+   .section2 {
+      margin-left: 0;
+   }
+
+   div .divSection1Info {
+      margin-bottom: 0;      
+   }
+
+   .divSection1 {
+      background-image: url('../images/hero_nature_large.jpg');
+   }
+
+   .section3 {
+      margin-left: 0;
+      margin-right: 0;      
+   }
+
+   .section4 {
+      margin-left: 0;
+      margin-right: 0; 
+    }
+
+   #colors {
+      grid-template-columns: auto auto auto auto auto;    
+   } 
+
+   .spanColor1{
+      margin-top: 5rem;
+    }
+  
+    .spanColor2{
+      margin-top: 5rem; 
+    }
+
+   .divGallery {
+      grid-template-columns: auto auto auto;
+   }
+
+   .divGallery figure {
+      border-radius: 5px;
+   }
+
+   .divGallery figure:hover {
+      box-shadow: 0 0 50px #858584;
+   }
+   
+   .pictureGallery {
+      border-radius: 5px;      
+   }
+
+   form {
+      width: 50%;      
+   }
+
+   #stormSeverityRange {
+      width: 60%;
+    }
+  
+    .stormRange {
+      margin-left: 0.75rem;
+    }
+  
+/*----------- FOOTER --------------*/  
+   footer {    
+      font-size: 1rem;    
+      max-width: 900px; 
+      margin: auto;
+   }
+}
