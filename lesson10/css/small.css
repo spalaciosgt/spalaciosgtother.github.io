@@ -133,6 +133,7 @@ main section {
     width: 80%;   
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+    background-color: rgb(185, 185, 233);
 }
 
 .divSection4 span {
