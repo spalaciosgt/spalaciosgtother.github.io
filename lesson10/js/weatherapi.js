@@ -52,7 +52,6 @@ fetch(apiURL)
             let iconPath = "https://openweathermap.org/img/w/" + iconType + ".png";            
             let picture = document.createElement("img");
             picture.setAttribute("src", iconPath);
-            picture.setAttribute("loading", "lazy");
             picture.setAttribute("alt", "Weather for " + weekDay[currentDay]);
             picture.setAttribute("class", "weatherState");
             forestDay.appendChild(picture); 
