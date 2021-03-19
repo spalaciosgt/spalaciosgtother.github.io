@@ -12,8 +12,24 @@ weekDay[5] = "Friday";
 weekDay[6] = "Saturday";
 
 
-// API Wheater URL from 5604473 Preston City
-const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=300a54035f682f83ebf3aa7d44d398ba";
+// API Wheater URL
+
+/*
+    Preston City ID = 5604473
+    Soda Springs City ID = 5607916
+    Fish Haven you will need to use the nearest town of Bear Lake County which is ID = 5585000
+*/
+let apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=idCity&units=imperial&appid=300a54035f682f83ebf3aa7d44d398ba";
+let cityName =  document.querySelector("#cityName").textContent;
+let cityCode = "5604473"; 
+
+if (cityName.includes("Soda Springs")) {
+    cityCode = "5607916"; 
+} if (cityName.includes("Fish Haven")) {
+    cityCode = "5585000"; 
+}
+
+apiURL = apiURL.replace("idCity", cityCode);
 
 // Loading JSON to an Object
 fetch(apiURL)

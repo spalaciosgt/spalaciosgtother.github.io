@@ -43,7 +43,15 @@
    }
 
    .divSection1 {
-      background-image: url('../images/hero_nature_large.jpg');
+      background-image: url('../images/hero_nature_large_02.jpg');
+   }
+
+   .divSection1A {
+      background-image: url('../images/hero_nature_large_01.jpg');
+   }
+
+   .divSection1B {
+      background-image: url('../images/hero_nature_large_03.jpg');
    }
 
    .section3 {

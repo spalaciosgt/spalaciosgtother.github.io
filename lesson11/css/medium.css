@@ -51,7 +51,15 @@
   }
 
   .divSection1 {
-    background-image: url('../images/hero_nature_medium.jpg');
+    background-image: url('../images/hero_nature_medium_02.jpg');
+  }
+
+  .divSection1A {
+    background-image: url('../images/hero_nature_medium_01.jpg');
+  }
+
+  .divSection1B {
+    background-image: url('../images/hero_nature_medium_03.jpg');
   }
 
   .section2 {

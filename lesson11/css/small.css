@@ -124,10 +124,23 @@ main section {
 }
 
 .divSection1 {
-    background-image: url('../images/hero_nature_small.jpg');
+    background-image: url('../images/hero_nature_small_02.jpg');
     background-size: 100% auto;
     padding: 15px;
 }
+
+.divSection1A {
+    background-image: url('../images/hero_nature_small_01.jpg');
+    background-size: 100% auto;
+    padding: 15px;
+}
+
+.divSection1B {
+    background-image: url('../images/hero_nature_small_03.jpg');
+    background-size: 100% auto;
+    padding: 15px;
+}
+
 
 .divSection2 {
     width: 80%;   
@@ -324,6 +337,7 @@ a {
 .pDay {
     text-align: center;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .section3 {
