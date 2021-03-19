@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">               
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css" >        
+    <link rel="stylesheet" href="css/medium.css" >        
+    <link rel="stylesheet" href="css/large.css" >                       
+    <link rel="shortcut icon" type="image/x-icon" href="images/company_logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <title>Preston Weather Site</title>
+    <meta name="author" content="Samuel Palacios">
+    <meta name="viewport" content="width=device-width, initial-scale=1">                
+    <meta name="description" content="Preston Weather Page">
+    <meta name="keywords" content="wheater, preston, high, place, montain, volcanoe, peak">        
+  </head>
+
+  <body>
+
+    <header>
+        <div>
+          <img class="companyLogo" src="images/company_logo.png" alt="Mountain Weather Logo"/>
+          <h1>Preston Weather Site</h1>
+          <h3>Get to know about weather!</h3>
+        </div>
+    </header>
+
+    <nav class="clearfix" id="navbar">    
+      <button id="button_menu" onclick="toggleMenu()">☰ Menu</button>  
+      <ul id="mainMenu" class="hideObject">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodaspring.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    
+    <img  src="images/hero_nature.jpg" 
+          alt="Random Image People" 
+          id="heroImage"
+          loading="lazy" />
+
+   <main>
+      <span id="messageJS">Saturday = Preston Pancakes in the Park!  9:00 a.m. 
+                                        Saturday at the city park pavilion.</span>          
+        <section id="cards">
+        </section>
+
+        <section class="section3">
+          <h2>Tip of the Day</h2>
+          <img class="articlePicture1" alt="Article Image" src="images/article-picture.jpg" />          
+          <p>The weather is important when planning outdoor activities, so it is important to take
+             into account any predictions that may be made. Find relevant weather information for 
+             the cities Preston, Soda Spring and Fish Haven on our website tool. Our website 
+             has all the information you need to know so that the weather does not surprise you. 
+             <br><br>
+             Apart from the common climate variables that must be known such as temperature, 
+             wind speed, relative humidity, among others, we also have a tool to report 
+             storms directly to the nearest climate center so that it can attend to the 
+             reported emergency. You will surely find more information and resources on
+             our website, so enjoy it!
+          </p>          
+          <img class="articlePicture2" alt="Tip Image" src="images/article-picture.jpg" />  
+        </section>
+
+        <section class="section4">
+          <h2>Contact Us</h2>
+          <div class="divSection4">
+            <div>
+              <span><strong>Address:</strong></span>
+              <span>The Weather Center</span>
+              <span>123 Main Street</span>
+              <span>Preston City</span>
+            </div>
+            <div>
+              <span><strong>Phone (WhatsApp):</strong></span>
+              <span>(001) 2345-6789</span>        
+              <p></p>      
+              <span><strong>Email:</strong></span>
+              <span>info@prestonweather.org</span>              
+            </div>
+            <div class="divMap">
+              <a href="https://goo.gl/maps/2fdHMSR4dry31jAv7" target="_blank">
+                <img class="map" src="images/google_maps_01.png" alt="Google Maps" />
+              </a>
+          </div>          
+        </section>  
+  </main>
+
+  <footer>
+    &copy; <span id="copyrightYear"></span> |
+    Samuel Palacios | From Guatemala | 
+    <a href="index.html">Preston Weather Website</a><br>
+    <span id="lastUpdated"></span> |
+    Data provided by <a href="https://openweathermap.org" target="_blank">OpenWeatherMap.org</a>                
+  </footer>  
+
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>    
+   <script src="js/main.js"></script>
+   <script src="js/windchill.js"></script>
+   <script src="js/cards.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">               
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css" >        
+    <link rel="stylesheet" href="css/medium.css" >        
+    <link rel="stylesheet" href="css/large.css" >                       
+    <link rel="shortcut icon" type="image/x-icon" href="images/company_logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <title>Preston Weather Site</title>
+    <meta name="author" content="Samuel Palacios">
+    <meta name="viewport" content="width=device-width, initial-scale=1">                
+    <meta name="description" content="Preston Weather Page">
+    <meta name="keywords" content="wheater, preston, high, place, montain, volcanoe, peak">        
+  </head>
+
+  <body>
+
+    <header>
+        <div>
+          <img class="companyLogo" src="images/company_logo.png" alt="Mountain Weather Logo"/>
+          <h1>Preston Weather Site</h1>
+          <h3>Get to know about weather!</h3>
+        </div>
+    </header>
+
+    <nav class="clearfix">    
+      <button id="button_menu" onclick="toggleMenu()">☰ Menu</button>  
+      <ul id="mainMenu" class="hideObject">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodaspring.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+        <h2>Thank you for helping us!</h2>
+    </main> 
+    
+    <footer>
+      &copy; <span id="copyrightYear"></span> |
+      Samuel Palacios | From Guatemala | 
+      <a href="index.html">Preston Weather Website</a><br>
+      <span id="lastUpdated"></span> |
+      Data provided by <a href="https://openweathermap.org" target="_blank">OpenWeatherMap.org</a>                
+    </footer>  
+    
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>    
+   <script src="js/main.js"></script>
+  </body>
+</html>
