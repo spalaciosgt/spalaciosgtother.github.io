@@ -521,6 +521,23 @@ main section:hover {
     width: 100%;
 }
 
+#incomingEvents {
+    padding-bottom: 0.5rem;
+}
+
+.eventItemDate {
+    margin: 0;
+    display: inline;    
+    color: black;
+}
+
+.eventItemName {
+    margin: 0;
+    display: inline;
+    font-weight: bold;
+    color: blue;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";

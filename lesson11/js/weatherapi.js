@@ -25,8 +25,10 @@ let cityCode = "5604473";
 
 if (cityName.includes("Soda Springs")) {
     cityCode = "5607916"; 
-} if (cityName.includes("Fish Haven")) {
+} else if (cityName.includes("Fish Haven")) {
     cityCode = "5585000"; 
+} else {
+    cityName = "Preston"; 
 }
 
 apiURL = apiURL.replace("idCity", cityCode);
@@ -82,3 +84,55 @@ fetch(apiURL)
         } 
     }
 });
+
+/*
+    Incoming Events
+*/
+
+// Towns JSON source
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+// Fetch function
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {        
+        console.table(jsonObject); 
+        
+        // Loading JSON object into towns object array
+        const towns = jsonObject['towns'];
+
+         // Loop for rendering each prophet card
+        for (let i = 0; i < towns.length; i++) {            
+            let cityNameRow = towns[i].name;
+            if (cityNameRow.localeCompare(cityName) == 0) {                
+                let eventsList = document.createElement("ul");
+                for (let j = 0; j < towns[i].events.length; j++) {
+                    let event = towns[i].events[j];
+                    let li = document.createElement("li");
+
+                    let dateEvent = "";
+                    let nameEvent = "";
+
+                    dateEvent = event.slice(0, event.indexOf(":"));
+                    nameEvent = event.slice(event.indexOf(":") + 1, event.length );
+                   
+                    let span1 = document.createElement("span");
+                    let span2 = document.createElement("span");
+
+                    span1.setAttribute("class", "eventItemDate");
+                    span2.setAttribute("class", "eventItemName");
+
+                    span1.textContent = dateEvent + ": ";
+                    span2.textContent = nameEvent;
+
+                    li.appendChild(span1);
+                    li.appendChild(span2);
+                    eventsList.appendChild(li);
+                }     
+                i =  towns.length;    
+                document.querySelector("#incomingEvents").appendChild(eventsList);  
+            }            
+        }
+    });
