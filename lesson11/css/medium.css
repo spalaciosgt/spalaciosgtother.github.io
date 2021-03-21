@@ -63,9 +63,17 @@
   }
 
   .section2 {
-    display: block;
-    margin-left: 10px;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;  
+    width: auto;  
+  }
+
+  .divSection2 {
+    width: 100%;   
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    background-color: rgb(185, 185, 233);        
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .articlePicture1 {

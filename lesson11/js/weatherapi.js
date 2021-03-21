@@ -60,6 +60,7 @@ fetch(apiURL)
             }
             
             let forestDay = document.createElement("div");
+            forestDay.setAttribute("class", "divDay"); 
 
             let span1 = document.createElement("span");
             span1.setAttribute("class", "day"); 
