@@ -1,0 +1,143 @@
+/*----------- apply a natural box layout model to all elements --------------*/
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+/*--------------------------------------------------------------------------*/
+
+/*
+    Header
+*/
+header {
+    display: grid;
+    grid-template-columns: 100%;
+    font-family: 'Lora', serif; 
+    background-color: white;  
+    border-bottom-style: solid; 
+    border-width: 1px;
+    border-color: gray;
+}
+
+.companyLogoDiv {
+    margin: 15px;   
+}
+
+.companyLogoImage {
+    float: left;
+    width: 40px;
+    margin-right: -2px;
+    display: block;
+}
+
+.textLogo1 {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    word-spacing: 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.textLogo2 {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: bold;
+    color:#8b0000;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul.hideObject {
+    display: none;
+}
+
+nav button {
+    background-color: darkred;
+    color: white;
+    font-size: 1.5rem;
+    border-style: none;    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+    width: 100%;    
+}
+
+nav ul {
+    font-weight: bold;
+    background-color: darkred;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;   
+}
+
+nav ul li a{
+    font-size: 1rem;
+    color: white;   
+    padding: 0.5rem 0;
+    display: block; 
+    text-decoration: none;       
+}
+
+nav ul li a.active{
+    background-color: rgba(0, 0, 0, 0.5);    
+}
+
+nav a:hover {
+    background-color: gray;  
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .content {
+    padding-top: 60px;
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+/*
+    Footer
+*/
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: white;    
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 13px 13px 13px 13px;    
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 0.75rem;  
+    text-align: center;    
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:visited a:hover {
+    color: white;    
+}
+
+.socialMediaIcon {
+    height: 1.5rem;
+    margin-top: 1rem;    
+    margin-left: 15px;    
+    margin-right: 15px;
+}
+/*---------------------------------------------------------------------------------------------------*/
