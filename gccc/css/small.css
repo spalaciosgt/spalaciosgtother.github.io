@@ -24,7 +24,7 @@ header {
     float: left;
     width: 40px;
     margin-right: -2px;
-    display: block;
+    display: block;        
 }
 
 .textLogo1 {
@@ -121,8 +121,8 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 13px 13px 13px 13px; 
     padding: 5px 5px;    
-    margin: 10px 10px;   
-    width: 300px;
+    margin: 10px 10px 5px;   
+    width: 280px;
 }
 
 #ctaParagraph {  
@@ -131,10 +131,11 @@ nav a:hover {
     border-radius: 13px 13px 13px 13px; 
     background-color: rgba(0, 0, 0, 0.8);
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.85rem;
-    padding: 5px 5px;    
+    font-size: 0.80rem;
+    padding: 10px 10px;    
     margin: 0 10px 10px;                 
     width: 400px;   
+    font-weight: normal;
 }
 
 #heroImage a {
@@ -212,6 +213,13 @@ main section h2 {
     margin-right: 10px;
 }
 
+.dateEvent2 {
+    text-align: right;
+    font-weight: bold;
+    color: green;
+    margin-right: 10px;
+}
+
 .section4 {
     font-family: 'Open Sans', sans-serif;
     margin-left: 15px;
@@ -273,6 +281,60 @@ main section h2 {
     margin: 0;
     padding: 15px;
 }
+
+#divSection3 {
+    display: grid;
+    font-family: 'Open Sans', sans-serif;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.divForest {
+    width: 100%;   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(185, 185, 233);  
+}
+
+.headingSection3 {
+    margin-top: 0;
+}
+
+#divWeather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+}
+
+.weatherState {
+    display: block;
+    width: 50px;
+    margin: auto auto;
+    padding: 0;
+}
+
+.pDay {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.divDay {
+    border-style: solid;    
+    border-width: 1px;
+    border-color: gray;
+    width: 100%;
+}
+
+.day {
+    display: block;
+    text-align: center;
+    background-color: #071261;
+    color: white;
+    padding: 10px;
+}
 /*--------------------------------------------------------------------------*/
 
 
@@ -305,7 +367,7 @@ footer a:visited a:hover {
 }
 
 .socialMediaIcon {
-    height: 1.5rem;
+    height: 2rem;
     margin-top: 1rem;    
     margin-left: 15px;    
     margin-right: 15px;

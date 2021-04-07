@@ -27,7 +27,7 @@
 
     #ctaParagraph {        
         font-size: 1.25rem;
-        padding: 5px 5px;    
+        padding: 15px 15px;    
         margin: 0 15px 15px;                  
         width: 500px;        
     }
@@ -51,10 +51,10 @@
     }
 
     .socialMediaIcon {
-        height: 2rem;
-        margin-top: 0;    
-        margin-left: 15px;    
-        margin-right: 15px;
+        height: 3rem;
+        margin-top: 0;   
+        margin-left: 10px;    
+        margin-right: 10px;
     }
     /*---------------------------------------------------------------------------------------------------*/
 }

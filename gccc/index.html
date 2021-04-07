@@ -52,7 +52,7 @@
         <header>
             <!-- Company Logo -->
             <div class="companyLogoDiv">
-              <img class="companyLogoImage" src="images/companylogo.png" alt="Mountain Weather Logo"/>
+              <img loading="lazy" class="companyLogoImage" src="images/companylogo.png" alt="Mountain Weather Logo"/>
               <span class="textLogo1">GUATEMALA CITY</span>
               <span class="textLogo1">CHAMBER OF COMMERCE</span>
               <span class="textLogo2">We believe in Guatemala!</span>              
@@ -85,7 +85,7 @@
             <!-- Section 1: Our Goal and Inconming Events -->
             <section class="section1">
                 <h1>Guatemala City Chamber of Commerce (GCCC)</h1>
-                <img id="secondImage" alt="Guatemala City" src="images/guatemalacity.jpg">
+                <img loading="lazy" id="secondImage" alt="Guatemala City" src="images/guatemalacity.jpg">
                 <div id="contentSection1">
                     <div class="divSection1">
                         <h2 class="headSection1">Our Goal</h2> 
@@ -120,27 +120,51 @@
                 <section class="section2Content">
                     <div class="companyDiv">
                         <h2>Banco Industrial</h2>
-                        <img class="logoCompanyCard" src="images/bi.jpg" alt="Banco Industrial"/>
+                        <img loading="lazy" class="logoCompanyCard" src="images/bi.jpg" alt="Banco Industrial"/>
                         <p>Banco Industrial is the leading bank in the entire country, its headquarters 
                             are in the city. It is an engine of the economy, providing financing for the 
                             most important companies in the country and for new entrepreneurs.</p>
                     </div>
                     <div class="companyDiv">
                         <h2>Grupo Distelsa</h2>
-                        <img class="logoCompanyCard" src="images/distelsa.jpg" alt="Grupo Distelsa"/>
+                        <img loading="lazy" class="logoCompanyCard" src="images/distelsa.jpg" alt="Grupo Distelsa"/>
                         <p>Grupo Distelsa is a company that sells quality electrical equipment, which has 
                            helped to modernize the homes of many Guatemalans who live in the city and in 
                            the interior.</p>
                     </div>
                     <div class="companyDiv">
                         <h2>Pollo Campero</h2>
-                        <img class="logoCompanyCard" src="images/campero.jpg" alt="Pollo Campero"/>
+                        <img loading="lazy" class="logoCompanyCard" src="images/campero.jpg" alt="Pollo Campero"/>
                         <p>Pollo Campero is the quintessential restaurant to eat within the city. Pollo 
                            Campero has been living with Guatemalans for many years with quality products 
                            inside and outside the city.</p>
                     </div>
                 </section>
             </section>    
+
+            <!-- Section 3: Weather Information -->
+            <section class="section3">
+                <h1>Weather Information</h1>
+                <div id="divSection3">
+                    <div>
+                        <h2 class="headingSection3">Weather Summary</h2>                    
+                        <div id="divWeather">
+                            <span class="dateEvent2">Currently: </span>
+                            <span id="currentState"></span>                    
+                            <span class="dateEvent2">High Temperature: </span>
+                            <span id="temperature"></span>                    
+                            <span class="dateEvent2">Humidity</span>
+                            <span id="humidity"></span> 
+                            <span class="dateEvent2">Wind Speed</span>                   
+                            <span id="windSpeed"></span>                    
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="headingSection3">Day Forecast</h2>
+                        <div class="divForest" id="forestDiv"> 
+                    </div>
+                </div>                
+              </section>
 
             <!-- Section 4: Contact Information -->
             <section class="section4">
@@ -161,7 +185,7 @@
                   </div>
                   <div class="divMap">
                     <a href="https://goo.gl/maps/fo8KEabPQa6HGToC8" target="_blank">
-                      <img class="Map" src="images/googlemaps.png" alt="Google Maps URL" />
+                      <img loading="lazy" class="Map" src="images/googlemaps.png" alt="Google Maps URL" />
                     </a>
                   </div>   
                 </div>        
@@ -177,7 +201,9 @@
             <div>
                 &copy; <span id="copyrightYear"></span> By Samuel Palacios |
                 <a href="index.html">Guatemala City Chamber of Commerce (GCCC)</a><br>
-                <a href="index.html">Official Website</a> | <span id="lastModifiedDate"></span>
+                <a href="index.html">Official Website</a> | <span id="lastModifiedDate"></span> | 
+                <a href="attributions.html">Attribution List Page</a><br>               
+                <a href="https://openweathermap.org" target="_blank">Data provided by OpenWeatherMap.org</a>
             </div>  
              <!-- Social Media Links -->                       
             <div>          
