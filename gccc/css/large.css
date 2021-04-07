@@ -20,16 +20,16 @@
 
     #ctaTitle {
         font-size: 2rem;
-        padding: 10px 10px;    
-        margin: 30px 30px 10px;   
+        padding: 5px 5px;    
+        margin: 15px 15px 15px;   
         width: 450px;
     }
 
     #ctaParagraph {        
-        font-size: 1rem;
-        padding: 10px 10px;    
-        margin: 0 30px;                  
-        width: 450px;        
+        font-size: 1.25rem;
+        padding: 5px 5px;    
+        margin: 0 15px 15px;                  
+        width: 500px;        
     }
     /*---------------------------------------------------------------------------------------------------*/
 
@@ -38,53 +38,7 @@
     */
     main {
         margin: auto;
-
         max-width: 900px;         
-    }
-
-    main section {
-        margin: 1rem 0; 
-    }
-
-    main section h1 {
-        color: darkred;
-        font-family: 'Lora', serif;;
-        display: block;
-        text-align: center;
-    }
-
-    main section h2 {
-        color: black;
-        font-family: 'Lora', serif;
-        display: block;
-        text-align: center;
-        margin-top: 0;
-    }
-
-    #contentSection1 {
-        display: grid;
-        grid-template-columns: 70% 30%;
-        grid-gap: 15px;
-    }
-
-    .divSection1 {
-        font-family: 'Open Sans', sans-serif;
-    }
-
-    .divSection1 span {
-        display: block;
-    }
-
-    .divSection1IncomingEvents {
-        display: grid;    
-        grid-template-columns: auto auto;
-    }
-
-    .dateEvent {
-        text-align: right;
-        font-weight: bold;
-        color: blue;
-        margin-right: 10px;
     }
     /*--------------------------------------------------------------------------*/
     
