@@ -407,7 +407,7 @@ form label.top input, form label.top select {
     background-color: rgba(0, 0, 0, 0.10);
     line-height: 1.15;
     width: 100%;
-    display: block;      
+    display: block;       
 }
 
 #submitButton {
@@ -420,6 +420,19 @@ form label.top input, form label.top select {
     margin-top: 1rem;   
     margin-bottom: 1rem;   
     font-weight: bold;
+}
+
+#submitButton2 {
+    width: 100%;
+    border: none;
+    background-color: darkred;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem; 
+    margin-top: 1rem;   
+    margin-bottom: 1rem;   
+    font-weight: bold;
+    display: none;
 }
 
 input[type="radio"] {
