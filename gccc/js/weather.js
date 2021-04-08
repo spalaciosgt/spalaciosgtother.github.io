@@ -31,7 +31,6 @@ let apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=3598132&units=
 fetch(apiURL)
   .then((response) => response.json())
   .then((weatherData) => {
-    console.log(weatherData);
     const weatherList = weatherData.list;
     let currentState = weatherList[0].weather[0].description;
     let temperature = Math.round(weatherList[0].main.temp * 10)/10;

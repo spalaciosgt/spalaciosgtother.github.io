@@ -171,6 +171,12 @@ main section h2 {
     padding: 0;
 }
 
+#thirdImage {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 #contentSection1 {
     display: grid;
     grid-template-columns: 1fr;
