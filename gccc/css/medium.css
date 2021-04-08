@@ -52,6 +52,10 @@
         grid-template-columns: 60% 40%;
     }
 
+    #contentSection1B {
+        grid-template-columns: 1fr 1fr; 
+     }    
+
     .divMap {
         margin-top: 0;    
         grid-column-start: 3;

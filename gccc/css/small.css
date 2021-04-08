@@ -179,6 +179,14 @@ main section h2 {
     margin-bottom: 1rem;
 }
 
+#contentSection1B {
+    display: grid;
+    grid-template-columns: 1fr; 
+    margin-top: -0.5rem;
+    padding-top: 0;
+    margin-bottom: 1rem;
+}
+
 .headSection1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -334,6 +342,16 @@ main section h2 {
     background-color: #071261;
     color: white;
     padding: 10px;
+}
+
+.referenceList {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section2P {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 /*--------------------------------------------------------------------------*/
 

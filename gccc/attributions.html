@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <!--
+        Head Especifications
+    -->
+    <head>    
+        <!-- Codification -->
+        <meta charset="UTF-8"> 
+
+        <!-- Normalize file -->
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <!-- Styles for small, medium and large screens -->
+        <link rel="stylesheet" href="css/small.css">        
+        <link rel="stylesheet" href="css/medium.css">        
+        <link rel="stylesheet" href="css/large.css"> 
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/companylogo.png" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+        <!-- Title page -->
+        <title>Attribution List Page - Guatemala City Chamber of Commerce (GCCC)</title>
+
+        <!-- 
+            Meta Tags 
+        -->
+        <!-- Author -->
+        <meta name="author" content="Samuel Palacios">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Description -->
+        <meta name="description" content="Guatemala City Chamber of Commerce">
+        <!-- Keywords -->
+        <meta name="keywords" content="guatemala, city, chamber, commerce, gccc, business">        
+
+    </head>
+
+    <!--
+        Body Content
+    -->
+    <body>
+
+        <!--
+            Header Content
+        -->        
+        <header>
+            <!-- Company Logo -->
+            <div class="companyLogoDiv">
+              <img loading="lazy" class="companyLogoImage" src="images/companylogo.png" alt="Mountain Weather Logo"/>
+              <span class="textLogo1">GUATEMALA CITY</span>
+              <span class="textLogo1">CHAMBER OF COMMERCE</span>
+              <span class="textLogo2">We believe in Guatemala!</span>              
+            </div>        
+            <!-- Main Menu -->    
+            <nav class="clearfix" id="navbar">    
+                <button id="mainMenuButton" onclick="toggleMenu()">☰</button>  
+                <ul id="mainMenu" class="hideObject">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="city.html">City</a></li>
+                    <li><a href="joinus.html">Join Us</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>                  
+                </ul>
+            </nav>                
+        </header>          
+
+        <!--
+            Main Content
+        -->
+        <main> 
+
+            <!-- Section 1: Our Goal and Inconming Events -->
+            <section class="section1">
+                <h1>Attribution List Page</h1>
+                <ul class="referenceList">                    
+                    <li>Weather data and icons: <a href="https://openweathermap.org/" target="_blank">Open Weather</a></li>
+                    <li>Social media icons: <a href="https://www.flaticon.es/" target="_blank">Pixel Perfect</a></li>
+                    <li>Guatemala city # 1: <a href="https://en.wikipedia.org/wiki/Guatemala_City#/media/File:Centro_Civico_Guatemala_City.jpg" target="_blank">Wikipedia Article</a></li>
+                    <li>Guatemala city # 2: <a href="https://es.wikipedia.org/wiki/Ciudad_de_Guatemala#/media/Archivo:Palacio_De_Gobierno_De_Guatemala_(243091369).jpeg" target="_blank">Wikipedia Article</a></li>
+                    <li>Guatemala city # 3: <a href="https://www.gpsmycity.com/tours/guatemala-city-culture-venues-5771.html" target="_blank">GPS My City Article</a></li>                    
+                    <li>Information and icon company # 1: <a href="https://www.corporacionbi.com/gt/bancoindustrial/inicio" target="_blank">Banco Industrial Website</a></li>
+                    <li>Information and icon company # 2: <a href="https://www.max.com.gt/" target="_blank">Grupo Distelsa Website</a></li>
+                    <li>Information and icon company # 3: <a href="https://gt.campero.com/" target="_blank">Pollo Campero Website</a></li>                    	
+                    <li>Events picture: <a href="https://www.pcma.org/business-events-1trillion-dollar-industry/" target="_blank">PCMA Article</a></li>                    	                    
+                </ul>
+            </section>
+
+        </main>
+
+        <!--
+            Footer Content
+        -->
+        <footer>   
+            <!-- Last Modified Date -->        
+            <div>
+                &copy; <span id="copyrightYear"></span> By Samuel Palacios |
+                <a href="index.html">Guatemala City Chamber of Commerce (GCCC)</a><br>
+                <a href="index.html">Official Website</a> | <span id="lastModifiedDate"></span> | 
+                <a href="attributions.html">Attribution List Page</a><br>               
+                <a href="https://openweathermap.org" target="_blank">Data provided by OpenWeatherMap.org</a>
+            </div>  
+             <!-- Social Media Links -->                       
+            <div>          
+                <a  href="https://facebook.com" target="_blank"><img class="socialMediaIcon" src="images/facebook.png" alt="Facebook GCCC" /></a>
+                <a  href="https://twitter.com" target="_blank"><img class="socialMediaIcon" src="images/twitter.png" alt="Twitter GCCC" /></a>
+                <a  href="https://youtube.com" target="_blank"><img class="socialMediaIcon" src="images/youtube.png" alt="Youtube GCCC" /></a>
+                <a  href="https://instagram.com" target="_blank"><img class="socialMediaIcon" src="images/instagram.png" alt="Instagram GCCC" /></a>
+            </div>            
+        </footer>
+        
+        <!--
+            JS libraries references
+        -->
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>      
+        <script src="js/main.js"></script>
+        <script src="js/weather.js"></script>
+
+    </body>
+</html>
