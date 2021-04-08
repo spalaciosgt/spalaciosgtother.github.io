@@ -25,7 +25,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
         <!-- Title page -->
-        <title>Attribution List Page - Guatemala City Chamber of Commerce (GCCC)</title>
+        <title>Contact Us - Guatemala City Chamber of Commerce (GCCC)</title>
 
         <!-- 
             Meta Tags 
@@ -65,7 +65,7 @@
                     <li><a href="city.html">City</a></li>
                     <li><a href="joinus.html">Join Us</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>                  
+                    <li><a href="contactus.html" class="active">Contact Us</a></li>                  
                 </ul>
             </nav>                
         </header>          
@@ -75,22 +75,70 @@
         -->
         <main> 
 
-            <!-- Section 1: Our Goal and Inconming Events -->
-            <section class="section1">
-                <h1>Attribution List Page</h1>
-                <ul class="referenceList">                    
-                    <li>Weather data and icons: <a href="https://openweathermap.org/" target="_blank">Open Weather</a></li>
-                    <li>Social media icons: <a href="https://www.flaticon.es/" target="_blank">Pixel Perfect</a></li>
-                    <li>Guatemala city # 1: <a href="https://en.wikipedia.org/wiki/Guatemala_City#/media/File:Centro_Civico_Guatemala_City.jpg" target="_blank">Wikipedia Article</a></li>
-                    <li>Guatemala city # 2: <a href="https://es.wikipedia.org/wiki/Ciudad_de_Guatemala#/media/Archivo:Palacio_De_Gobierno_De_Guatemala_(243091369).jpeg" target="_blank">Wikipedia Article</a></li>
-                    <li>Guatemala city # 3: <a href="https://www.gpsmycity.com/tours/guatemala-city-culture-venues-5771.html" target="_blank">GPS My City Article</a></li>                    
-                    <li>Information and icon company # 1: <a href="https://www.corporacionbi.com/gt/bancoindustrial/inicio" target="_blank">Banco Industrial Website</a></li>
-                    <li>Information and icon company # 2: <a href="https://www.max.com.gt/" target="_blank">Grupo Distelsa Website</a></li>
-                    <li>Information and icon company # 3: <a href="https://gt.campero.com/" target="_blank">Pollo Campero Website</a></li>                    	
-                    <li>Events picture: <a href="https://www.pcma.org/business-events-1trillion-dollar-industry/" target="_blank">PCMA Article</a></li>                    	                    
-                    <li>Business chamber pictures: <a href="https://www.ccg.com.gt/" target="_blank">Camara de Comercio de Guatemala</a></li>                    	                                        
-                </ul>
-            </section>
+           <!-- Section 1: Contact Information -->
+           <section class="section4">
+            <h1>Contact Information</h1>
+            <div class="divSection4">
+              <div>
+                <span><strong>Address:</strong></span>
+                <span>Main Road Avenue</span>
+                <span>#15-40 Zone 10</span>
+                <span>Guatemala City, Central America</span>
+              </div>
+              <div>
+                <span><strong>Phone (WhatsApp):</strong></span>
+                <span><a href="https://api.whatsapp.com/send?phone=50223456789" target="_blank">(502) 2345-6789</a></span>        
+                <p></p>      
+                <span><strong>Email:</strong></span>
+                <span><a href="mailto:info@gccc.com" target="_blank">info@gccc.org</a></span>              
+              </div>
+              <div class="divMap">
+                <a href="https://goo.gl/maps/fo8KEabPQa6HGToC8" target="_blank">
+                  <img loading="lazy" class="Map" src="images/googlemaps.png" alt="Google Maps URL" />
+                </a>
+              </div>   
+            </div> 
+            <div class="divSection4B">                
+                <div>
+                    <h2>Contact Us Form</h2>
+                    <form method="get" action="thanks.html">
+                        <fieldset>
+                            <legend>Contact us or leave your comments</legend>
+                            <label class="top">Name*<input type="text" name="fullName" pattern="[A-Za-z ]{5,}" required></label>
+                            <label class="top">Phone*<input type="tel" name="phoneNumber" required></label>
+                            <label class="top">Email*<input type="email" name="email" required></label>
+                            <label class="top">Comments                                                
+                            <textarea id="comments"name="additionalComments" cols="50" rows="20"></textarea>   
+                            <input id="submitButton" type="submit" value="Send Comments">
+                        </fieldset>                         
+                    </form>    
+                </div>
+                <div>
+                    <h2>Board of Directors</h2>
+                    <img src="images/directors.jpg" alt="Board of Directors" id="boardDirectors" />
+                    <div class="divSection1">
+                        <div class="divSection1IncomingEvents">
+                            <span class="dateEvent">President</span>
+                            <span>Mario Alberto Fajardo Arzu</span>                         
+                            <span class="dateEvent">Vice President</span>
+                            <span>Luis Daniel Lopez Velasquez</span>
+                            <span class="dateEvent">Secretary</span>
+                            <span>Andrea Isabel Vasquez Ock</span>
+                            <span class="dateEvent">Treasurer</span>
+                            <span>Aldo Alfredo Sequen Lan</span>
+                            <span class="dateEvent">Vocal I</span>
+                            <span>Maria Fernanda Sagastume Gimenez</span>
+                            <span class="dateEvent">Vocal II</span>
+                            <span>Cony Fernanda Alvarez</span>
+                            <span class="dateEvent">Vocal III</span>
+                            <span>Ramon Esteban Leiva</span>
+                            <span class="dateEvent">Vocal IV</span>
+                            <span>Jorge Luis Pinto Reyes</span>
+                        </div>
+                    </div> 
+                </div>
+            </div>     
+          </section>  
 
         </main>
 
