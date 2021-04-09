@@ -1,5 +1,5 @@
 // Companies JSON source
-const requestURL = './directory.json';
+const requestURL = 'https://spalaciosgt.github.io/gccc/json/directory.json';
 
 // Fetch function
 fetch(requestURL)
@@ -10,7 +10,7 @@ fetch(requestURL)
         console.table(jsonObject); 
 
         // Loading JSON object into companies object array
-        const companies = jsonObject['companines'];
+        const companies = jsonObject['companinies'];
 
         alert(companies);
     });
