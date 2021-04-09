@@ -1,0 +1,12 @@
+{
+  "companies": [
+    {
+      "name": "Banco Industrial",	  
+      "shortName": "BI",
+	  "contactCenter": "+(502)1122",
+	  "contactEmail": "info@corporacionbi",
+	  "contactPage": "https://www.corporacionbi.com/",
+	  "logoFile": "bi.jpg"
+    }
+  ]
+}
