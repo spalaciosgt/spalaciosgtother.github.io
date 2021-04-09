@@ -571,6 +571,39 @@ input[type="radio"] {
 .divBenefitr {
     margin-bottom: 2rem;
 }
+
+.cardCompany {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.imageCardCompany {
+    width: 100%;
+    display: block;
+    padding: 25px;
+    margin: auto;
+}
+
+.headCardCompany {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: darkred;
+}
+
+.spanCardCompany {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.linkCardCompany {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;        
+    font-weight: bold;
+}
 /*--------------------------------------------------------------------------*/
 
 /*
