@@ -66,6 +66,26 @@
         grid-template-columns: 40% 60%;
         margin-bottom: 0;    
     } 
+
+    .imageBenefitl {
+        width: 50%;
+        float: left;
+        height: 20rem;
+    }
+    
+    .imageBenefitr {
+        width: 50%;
+        float: right;
+        height: 20rem;
+    }
+
+    .divBenefitl {
+        padding-left: 55%;
+    }
+    
+    .divBenefitr {
+        padding-right: 55%;
+    }
     /*--------------------------------------------------------------------------*/
 
     /*

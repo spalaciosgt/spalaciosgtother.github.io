@@ -487,6 +487,27 @@ input[type="radio"] {
     width: 100%;
     margin-bottom: 1rem;
 }
+
+#benefitsDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.imageBenefitl {
+    width: 100%;
+}
+
+.imageBenefitr {
+    width: 100%;
+}
+
+.divBenefitl {
+    margin-bottom: 2rem;
+}
+
+.divBenefitr {
+    margin-bottom: 2rem;
+}
 /*--------------------------------------------------------------------------*/
 
 /*
