@@ -33,6 +33,13 @@ WebFont.load({
 });
 //---------------------------------------------------------------------------------------------------//
 
+function confirmApplication() {
+    var confirmButton = document.getElementById("submitButton3");
+    confirmButton.classList.remove("hideButton");
+    var preButton = document.getElementById("submitButton2");
+    preButton.classList.add("hideButton");    
+}
+
 /* 
     Sticky Menu
 */    

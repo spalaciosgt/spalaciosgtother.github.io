@@ -107,19 +107,28 @@
                     <form method="get" action="thanks.html">
                         <fieldset>
                             <legend>Please fill this form</legend>
-                            <label class="top">First Name*<input type="text" name="firstName" pattern="[A-Za-z ]{5,}" required></label>
-                            <label class="top">Last Name*<input type="text" name="lastName" pattern="[A-Za-z ]{5,}" required></label>
+                            <label class="top">First Name*<input type="text" name="firstName" pattern="[A-Za-z ']{5,}" required></label>
+                            <label class="top">Last Name*<input type="text" name="lastName" pattern="[A-Za-z ']{5,}" required></label>
                             <label class="top">Title<input type="text" name="title"></label>
                             <label class="top">Phone*<input type="tel" name="phoneNumber" required></label>
                             <label class="top">Email*<input type="email" name="email" required></label>
-                            <label class="top">Business Name*<input type="text" name="businessName" pattern="[A-Za-z ]{5,}" required></label>
+                            <label class="top">Business Name*<input type="text" name="businessName" pattern="[A-Za-z ']{5,}" required></label>
                             <label class="top">Business Address<input type="text" name="businessAddress"></label>
                             <label class="top">Business Website<input type="url" name="businessWebsite"></label>
                             <label class="top">Business Description                                                
-                                <textarea id="comments" name="additionalComments" cols="50" rows="20"></textarea>   
+                                <textarea id="comments2" name="additionalComments" cols="50" rows="20"></textarea>   
                             </label>
-                            <input id="submitButton" type="submit" value="Send Application">
-                            <input id="submitButton2" type="submit" value="Confirm Application">
+                            <label class="top">Membership Level
+                                <select name="Membership" required>
+                                    <option value="None">Select One...</option>
+                                    <option value="Non-profit">Non-profit ($100)</option>
+                                    <option value="Bronze">Bronze ($200)</option>
+                                    <option value="Silver">Silver ($400)</option>
+                                    <option value="Gold">Gold ($1000)</option>
+                                </select>
+                            </label>
+                            <input id="submitButton2" onclick="confirmApplication()" type="submit" value="Send Application">                            
+                            <input id="submitButton3" type="submit" value="Confirm Application" class="hideButton">                            
                         </fieldset>                         
                     </form>    
                 </div>                
