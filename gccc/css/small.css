@@ -144,6 +144,69 @@ nav a:hover {
     text-decoration: none;        
     color: #2caaff; 
 }
+
+#tableBenefits {
+    table-layout: fixed;
+    width: 95%;
+    border-collapse: collapse;
+    border: 2px solid gray;
+    margin-left: 2.5%;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+  
+thead th:nth-child(2) {
+    width: 17.5%;
+}
+
+thead th:nth-child(3) {
+    width: 17.5%;
+}
+
+thead th:nth-child(4) {
+    width: 17.5%;
+}
+
+thead th:nth-child(5) {
+    width: 17.5%;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    font-family: 'Lora', serif !important;     
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+  
+td {
+    font-family: 'Open Sans', sans-serif !important;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+}
+  
+tbody td {
+    text-align: center;
+}  
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(185, 185, 233);
+    color: black;
+}
+  
+tbody tr:nth-child(even) {
+    background-color: #071261;
+}  
+  
+table {
+    background-color: black;
+    color: white;
+    margin-bottom: 2rem;
+}
 /*---------------------------------------------------------------------------------------------------*/
 
 /*
