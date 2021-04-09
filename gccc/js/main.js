@@ -33,11 +33,25 @@ WebFont.load({
 });
 //---------------------------------------------------------------------------------------------------//
 
+/*
+    Complement Functions
+*/
 function confirmApplication() {
     var confirmButton = document.getElementById("submitButton3");
     confirmButton.classList.remove("hideButton");
     var preButton = document.getElementById("submitButton2");
     preButton.classList.add("hideButton");    
+}
+
+function toList() {
+    var dir = document.getElementById("directory");
+    dir.classList.add("gridOne");
+}
+
+function toGrid() {
+    var dir = document.getElementById("directory");
+    dir.classList.remove("gridOne");
+    
 }
 
 /* 

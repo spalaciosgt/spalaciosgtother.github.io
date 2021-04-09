@@ -23,6 +23,38 @@
 	    "contactEmail": "info@gt.campero.com",
 	    "contactPage": "https://gt.campero.com/",
 	    "logoFile": "campero.jpg"
+    },
+    {
+      "name": "Pollo Campero",	  
+      "shortName": "PC",
+	    "contactCenter": "+(502) 1212",
+	    "contactEmail": "info@gt.campero.com",
+	    "contactPage": "https://gt.campero.com/",
+	    "logoFile": "campero.jpg"
+    },
+    {
+      "name": "Pollo Campero",	  
+      "shortName": "PC",
+	    "contactCenter": "+(502) 1212",
+	    "contactEmail": "info@gt.campero.com",
+	    "contactPage": "https://gt.campero.com/",
+	    "logoFile": "campero.jpg"
+    },
+    {
+      "name": "Banco Agromercantil",	  
+      "shortName": "BAM",
+	    "contactCenter": "+(502) 1919",
+	    "contactEmail": "info@bam.com.gt",
+	    "contactPage": "https://bam.com.gt/",
+	    "logoFile": "bam.jpg"
+    },
+    {
+      "name": "Administrador del Mercado Mayorista",	  
+      "shortName": "AMM",
+	    "contactCenter": "+(502) 2324-2512",
+	    "contactEmail": "info@amm.org.gt",
+	    "contactPage": "https://www.amm.org.gt/",
+	    "logoFile": "amm.jpg"
     }
   ]
 }

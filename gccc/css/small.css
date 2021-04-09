@@ -572,11 +572,21 @@ input[type="radio"] {
     margin-bottom: 2rem;
 }
 
+#directory {
+    display: grid;    
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+}
+
 .cardCompany {
     border-style: solid;
     border-width: 1px;
     border-color: gray;
-    box-shadow: 2px 2px 5px #999;
+    box-shadow: 2px 2px 5px #999;    
+}
+
+.cardCompany:hover {
+    background-color: rgba(37, 0, 247, 0.15);
 }
 
 .imageCardCompany {
@@ -603,6 +613,10 @@ input[type="radio"] {
     text-align: center;
     margin-bottom: 1rem;        
     font-weight: bold;
+}
+
+#bottons {
+    display: none;
 }
 /*--------------------------------------------------------------------------*/
 
