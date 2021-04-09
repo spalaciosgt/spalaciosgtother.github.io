@@ -25,20 +25,20 @@
 	    "logoFile": "campero.jpg"
     },
     {
-      "name": "Pollo Campero",	  
-      "shortName": "PC",
-	    "contactCenter": "+(502) 1212",
-	    "contactEmail": "info@gt.campero.com",
-	    "contactPage": "https://gt.campero.com/",
-	    "logoFile": "campero.jpg"
+      "name": "Instituto Recreativo",	  
+      "shortName": "IRTRA",
+	    "contactCenter": "+(502) 2030",
+	    "contactEmail": "info@irtra.org.gt",
+	    "contactPage": "https://irtra.org.gt//",
+	    "logoFile": "irtra.jpg"
     },
     {
-      "name": "Pollo Campero",	  
-      "shortName": "PC",
-	    "contactCenter": "+(502) 1212",
-	    "contactEmail": "info@gt.campero.com",
-	    "contactPage": "https://gt.campero.com/",
-	    "logoFile": "campero.jpg"
+      "name": "Azucar Real",	  
+      "shortName": "ACR",
+	    "contactCenter": "+(502) 7878-4545",
+	    "contactEmail": "info@azucarcanareal.com",
+	    "contactPage": "http://azucarcanareal.com/",
+	    "logoFile": "azucarreal.jpg"
     },
     {
       "name": "Banco Agromercantil",	  
