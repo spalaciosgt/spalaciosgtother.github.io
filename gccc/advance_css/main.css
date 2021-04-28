@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+body div {
+    display: grid;
+    grid-template-columns: 1fr;    
+    font-family: Arial, Helvetica, sans-serif;        
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;    
+}
+
+header {
+    padding: 2rem 1rem;
+    background-color: #6495ED;
+    text-align: right;
+}
+
+header a {
+    text-decoration: none;
+    color: white;    
+}
+
+header a:visited {    
+    color: #FAEBD7;    
+}
+
+header a:active {    
+    color: #DEB887;    
+}
+
+header a:hover {    
+    color: white;    
+    text-decoration: underline;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    padding-top: 1rem;
+}
+
+main {
+    background-color: #FAEBD7;
+}
+
+a {
+    text-decoration: none;    
+}
+
+a:visited {
+    color: #6495ED;    
+}
+
+a:active {
+    color: #DEB887;    
+}
+
+a:hover {
+    text-decoration: un;
+}
+
+/* Medium Screens */
+@media only screen and (min-width: 45rem) {
+    body div {
+        grid-template-columns: auto auto;
+    }
+
+    header {
+        padding: 3rem 2rem;
+    }
+}
