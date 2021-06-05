@@ -1,0 +1,114 @@
+/*****************************************************************************************/
+/*
+  Variable Definitions
+*/
+
+// General Values
+$number-columns: 8;
+$one-column-size: 100%/$number-columns;
+
+// Card Values
+$card-width: 40vw;
+$card-height: $card-width*1.4;
+$font-size-number: $card-width*0.1;
+$icon-size: $card-width/5;
+
+// Loop Values
+$i-start: 1;
+$i-end: $number-columns+1;
+
+/*
+  Mixin Definitions
+*/
+
+// For Columns
+@mixin col($span-num) {
+  flex: 0 0 $one-column-size * $span-num;
+}
+
+// For Offsets
+@mixin offset($offset-num) {
+  margin-left: $one-column-size * $offset-num;
+}
+
+/*
+  Class Definitions
+*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// For a row of pips
+.row {
+  height: 100%;  
+  align-items: center;
+  align-content: space-between;
+  display: flex;
+  flex-flow: row wrap;  
+} 
+
+// For each pip in a row
+.cell {
+  text-align: center;
+  flex: 1;  
+}
+
+// For the column with the number
+.number {  
+  text-align: center;
+  font-size: $font-size-number;
+  & > .icon {
+    width: $icon-size * 0.5;
+    height: $icon-size * 0.5;
+  }
+}
+
+// Styles For Card
+.card {
+  height: $card-height;
+  width: $card-width;
+  border: 1px solid grey;
+  border-radius: 9px;
+  margin: 18px;
+  box-shadow: 2px 2px 4px grey;
+}
+
+// Extra Padding for Card Front
+.card-front {
+  padding: 0.5em;
+}
+
+// Style for Icon
+.icon {
+  height: $icon-size;
+  width: $icon-size;  
+}
+
+// Rotation Pips
+.rotate {
+  transform: rotate(180deg);
+}
+
+/*
+  Loops For, to apply mixins
+*/
+
+// For columns
+@for $i from $i-start to $i-end {
+  .col-#{$i} {
+    @include col($i);
+  }
+}
+
+// For offsets
+@for $i from $i-start to $i-end {
+  .offset-#{$i} {
+    @include offset($i);
+  }
+}  
+/*****************************************************************************************/
