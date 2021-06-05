@@ -1,0 +1,34 @@
+/*****************************************************************************************/
+/*
+  Variable Definitions 
+*/
+
+// General Values
+$number-columns: 8;
+$one-column-size: 100%/$number-columns;
+
+// Card Values
+$card-width: 40vw;
+$card-height: $card-width*1.4;
+$font-size-number: $card-width*0.1;
+$icon-size: $card-width/5;
+
+// Loop Values
+$i-start: 1;
+$i-end: $number-columns+1;
+
+/*
+  Mixin Definitions
+*/
+@import 'partials/mixins';
+
+/*
+  Style Class Definitions
+*/
+@import 'partials/style';  
+
+/*
+  Loops For, to apply mixins
+*/
+@import 'partials/loops';  
+/*****************************************************************************************/

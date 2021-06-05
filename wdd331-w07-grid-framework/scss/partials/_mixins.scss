@@ -1,0 +1,11 @@
+/*****************************************************************************************/
+// For Columns
+@mixin col($span-num) {
+  flex: 0 0 $one-column-size * $span-num;
+}
+
+// For Offsets
+@mixin offset($offset-num) {
+  margin-left: $one-column-size * $offset-num;
+}
+/*****************************************************************************************/

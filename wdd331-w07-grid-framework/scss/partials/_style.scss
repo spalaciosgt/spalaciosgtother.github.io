@@ -1,40 +1,4 @@
 /*****************************************************************************************/
-/*
-  Variable Definitions
-*/
-
-// General Values
-$number-columns: 8;
-$one-column-size: 100%/$number-columns;
-
-// Card Values
-$card-width: 40vw;
-$card-height: $card-width*1.4;
-$font-size-number: $card-width*0.1;
-$icon-size: $card-width/5;
-
-// Loop Values
-$i-start: 1;
-$i-end: $number-columns+1;
-
-/*
-  Mixin Definitions
-*/
-
-// For Columns
-@mixin col($span-num) {
-  flex: 0 0 $one-column-size * $span-num;
-}
-
-// For Offsets
-@mixin offset($offset-num) {
-  margin-left: $one-column-size * $offset-num;
-}
-
-/*
-  Class Definitions
-*/
-
 *,
 *:before,
 *:after {
@@ -68,7 +32,7 @@ $i-end: $number-columns+1;
   }
 }
 
-// Styles For Card
+// For Card
 .card {
   height: $card-height;
   width: $card-width;
@@ -93,22 +57,4 @@ $i-end: $number-columns+1;
 .rotate {
   transform: rotate(180deg);
 }
-
-/*
-  Loops For, to apply mixins
-*/
-
-// For columns
-@for $i from $i-start to $i-end {
-  .col-#{$i} {
-    @include col($i);
-  }
-}
-
-// For offsets
-@for $i from $i-start to $i-end {
-  .offset-#{$i} {
-    @include offset($i);
-  }
-}  
 /*****************************************************************************************/
