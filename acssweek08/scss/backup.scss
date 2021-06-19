@@ -1,0 +1,399 @@
+/*
+    Variables    
+*/
+
+
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+
+.page-wrapper { 
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+main h3, 
+.preamble h3, 
+.select { 
+    visibility: hidden; 
+    font-size: 2rem; 
+    text-transform: uppercase; 
+    letter-spacing: 0.1em; 
+    color: #263358; 
+}
+
+.wf-active {
+    .main h3, 
+    .preamble h3 { 
+        font-weight: 900; 
+    }
+}
+
+
+.main h3:after, 
+.preamble h3:after, 
+.select:after { 
+    visibility: visible; 
+    display: block; 
+}
+
+.main p, .preamble p { 
+    font-size: 2rem; 
+}
+.wf-active {
+    .main p, 
+    .preamble p { 
+        line-height: 1.4; 
+    }
+}   
+
+/*-------------------------------------------    
+    Preamble
+-------------------------------------------*/
+.summary p { 
+    text-transform: uppercase; 
+    letter-spacing: 0.1em; 
+    font-size: 1.8rem; 
+    line-height: 1.6; 
+}
+
+.summary p:nth-child(2) a {	
+    transition-property: none;
+    -moz-transition-property: none;
+    -webkit-transition-property: none;
+    -o-transition-property: none;
+}
+
+.summary p:nth-child(2) a:after { 
+    opacity: 0; 
+}
+
+/*-------------------------------------------    
+	Explanation
+-------------------------------------------*/
+.explanation h3:after { 
+    content: "See Yourself in a Different Way";  
+}
+
+/*-------------------------------------------    
+	Participation
+-------------------------------------------*/
+.participation h3:after { 
+    content: "Get Into a Brand New Pair";  
+}
+
+/*-------------------------------------------    
+	Benefits
+-------------------------------------------*/
+.benefits h3:after { 
+    content: "Look Great\2026  and Feel Great Too!";  
+}
+
+/*-------------------------------------------    
+	Requirements
+-------------------------------------------*/
+.requirements h3:after { 
+    content: "“One Size Fits” All Be Damned!"; text-indent: -0.5em; 
+}
+
+
+/*-------------------------------------------    
+	Design Selection
+-------------------------------------------*/
+.design-selection { 
+    margin: 3em 0 0; 
+    ul { 
+        list-style: none;
+         width: 94%; 
+         margin: 0 auto; 
+    }
+	ul:after { 
+        content: "."; 
+        display: block; 
+        height: 0; 
+        clear: both; visibility: hidden; 
+    }
+	
+    li { 
+        float: left; 
+        width: 50%;
+        font-size: 1.2rem; 
+        margin: 0 0 1em; 
+        color: #aaa; 
+    }
+	li:nth-child(odd) { 
+        width: 47%; 
+        padding-right: 3%; 
+        clear: left; 
+    }
+}
+	
+.design-name { 
+    display: block; 
+    font-size: 1.4rem; 
+    font-weight: bold; 
+    margin: 0 0 0.24em; 
+    text-transform: uppercase; 
+    letter-spacing: 0.1em; 
+    position: relative; 
+
+    &:after { 
+        background: none; 
+        opacity: 0; 
+    }
+	
+    &:hover { 
+        font-style: italic;
+    }
+}
+			
+			
+.designer-name { 
+    color: #7989a3; 
+}
+.designer-name:after, 
+footer a:after { 
+    height: 1px; 
+}
+
+.zen-resources {
+    ul { 
+        list-style: none; margin: 2em 0 4em; text-align: center; 
+        &:before { content: ""; height: 4px; width: 80px; background: #d5d9dc; display: block; text-align: center; margin: 0 auto 2em; }
+    }
+
+    li {
+         margin: 0 0 1em 3em; display: inline-block; 
+         &:first-child { margin-left: 0; }
+    }
+
+    a { 
+        display: inline-block; 
+        text-indent: 100%; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        background: transparent url(s/czg.svg) no-repeat 0 0; 
+        width: 60px; 
+        height: 60px; 
+    }
+}
+                
+.view-css a { 
+    background-position: -502px 12px; 
+    &:hover,
+    &:focus {
+        background-position: -502px -78px; 
+    }
+}
+
+.css-resources a { 
+    background-position: -150px -194px; 
+    &:hover,
+    &:focus { 
+        background-position: -150px -286px; 
+    }
+}
+
+.zen-faq a { 
+    background-position: -265px -192px; 
+    &:hover,
+    &:focus { 
+        background-position: -265px -284px; 
+    }
+}
+
+.zen-submit a { 
+    background-position: -502px -194px;
+    &:hover,
+    &:focus  { 
+        background-position: -502px -286px; 
+    }
+}
+.zen-translations a { 
+    background-position: -380px -193px;
+    &:hover,
+    &:focus  { 
+        background-position: -380px -285px; 
+    }            
+}
+
+$break-point-medium-screen: 700px;
+@media screen and (min-width: $break-point-medium-screen) {
+    
+    .intro:before { 
+        content: ""; 
+        display: block; 
+        width: 105px; 
+        height: 30px; 
+        position: fixed; 
+        top: 154px; 
+        left: 3%;
+        background: transparent url(s/czg.svg) no-repeat -184px -99px; 
+    }
+    
+	[role="article"], [role="banner"], footer { 
+        padding: 0 30% 10em 10%; 
+        text-align: right; 
+        position: relative; 
+    }
+    
+    [role="banner"] h2 { 
+        position: absolute; 
+        top: -0.75em; 
+        left: 75%; 
+        width: 10em; 
+        text-align: left; 
+        font-size: 1.5rem; 
+        letter-spacing: 0; 
+    }
+
+    [role="article"] h3{ 
+        position: absolute; 
+        top: -0.75em; 
+        left: 75%; 
+        width: 10em; 
+        text-align: left; 
+        font-size: 1.5rem; 
+        letter-spacing: 0; 
+
+        &:after { 
+            position: absolute; top: 0; 
+        }
+    }
+
+    [role="banner"] { 
+        padding-top: 200px; padding-bottom: 3em; 
+        h1 { font-size: 4.8rem; letter-spacing: 0; line-height: 0.8; }
+        h1:after { position: absolute; top: 15.7em; right: 30%; }    
+        h2 { display: block; top: 8.1em; width: 3em; left: 75.5%; font-size: 1.9rem; line-height: 1; }
+        h2:before { visibility: visible; content: "Est. 2003"; display: block; position: fixed; top: -0.1em; bottom: 0; left: -0.5em; right: 0; margin: auto; /*right: 25%;*/ font-weight: 900; font-size: 50rem; color: rgba(0, 0, 0, 0.15); width: 100%; height: 2em; line-height: 1; transform: rotate(-90deg); -ms-transform: rotate(-90deg); /* IE 9 */ -webkit-transform: rotate(-90deg); /* Safari and Chrome */ -webkit-mask-image: url(i/denim-mask2.png); -o-mask-image: url(i/denim-mask2.png); -moz-mask-image: url(i/denim-mask2.png); mask-image: url(i/denim-mask2.png); }
+    }    
+
+    .summary p:nth-child(2) { 
+        background: yellow; 
+        position: relative; 
+        visibility: hidden; 
+        top: 2em; 
+        font-size: 1.4rem; 
+
+        &:before { content: ""; display: block; visibility: visible; position: absolute; right: 21em; top: -0.25em; background: transparent url(s/czg.svg) no-repeat -159px -1px; width: 6em; height: 30px; }
+        &:after { content: ""; display: block; visibility: visible; position: absolute; right: 14em; top: -0.25em; background: transparent url(s/czg.svg) no-repeat -277px 0; width: 6em; height: 30px; }
+        a { visibility: visible; 
+            background: transparent url(s/czg.svg) no-repeat -376px -93px; 
+            width: 6em; 
+            height: 25px; 
+            text-indent: 100%; 
+            white-space: nowrap; 
+            overflow: hidden; 
+            display: block; 
+            position: absolute; 
+            top: 0; right: 7em; 
+            &:hover,
+            &:focus { 
+                background-position: -396px -3px; 
+                text-indent: 0; background: none; 
+            }
+        }  
+        
+        a[href*="css"] { 
+            background-position: -472px -94px; 
+            right: 0; 
+        }
+
+        a[href*="css"]:hover, 
+        a[href*="css"]:focus { 
+            background-position: -512px -4px; 
+        }
+    }
+
+	.design-selection {
+        li { 
+            width: 23%; 
+            margin-bottom: 3em; 
+            padding-right: 2%;                 
+            
+            &:nth-child(odd) { 
+                width: 23%; 
+                clear: none; 
+                padding-right: 2%; 
+            }            
+        }
+    }    
+}   
+
+@media screen and (min-width: 1130px) {
+
+	[role="article"], [role="banner"] { 
+        padding-left: 25%; 
+    }
+    
+    .design-selection { 
+        position: absolute; 
+        left: 5%; 
+        top: 30em;
+        ul { 
+            margin: 0; 
+            width: 100%; 
+        } 
+
+        li { 
+            float: none; 
+            width: 100% !important; 
+            padding: 0 !important; 
+            margin-bottom: 2em;
+        }
+    }					
+}
+
+@media screen and (min-width: 1130px) and (min-height: 1037px)  {
+	.design-selection, .design-archives { 
+        position: fixed; 
+    }
+}
+
+/*-------------------------------------------    
+	Banner
+-------------------------------------------*/
+[role="banner"] { 
+    h1 {
+        padding: 1em 0 0; 
+        text-transform: uppercase; 
+        letter-spacing: 0.1em; 
+        font-size: 3.5rem; 
+        font-weight: 900; 
+        color: #182e4f; 
+        visibility: hidden; 
+
+        &:before { 
+            content: "CSS Zen Canvas"; 
+            visibility: visible; 
+            display: block; }
+
+        &:after { 
+            content: "Made Locally"; 
+            visibility: visible; 
+            display: block; 
+            color: #aaa; 
+            letter-spacing: 0.5em; 
+            font-size: 1.4rem; 
+            font-weight: normal; 
+            margin: 0.5em 0 3em; 
+            color: rgba(24, 46, 79, 0.4); 
+        }
+    }
+
+    h2 { 
+        visibility: hidden; 
+        display: none; 
+        text-transform: uppercase; 
+        font-weight: 400; 
+        color: rgba(41, 78, 134, 0.5); 
+        &:after { 
+            content: "Impeccable Quality"; 
+            visibility: visible; 
+            display: block; 
+        }        
+    }
+}
+
